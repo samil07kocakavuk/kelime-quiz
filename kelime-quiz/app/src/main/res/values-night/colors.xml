@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base Colors -->
+    <color name="surface_elevated">#05090A</color>
+    <color name="surface_variant">#121B1F</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- Primary & Action Colors -->
+    <color name="primary">#26A69A</color>
+    <color name="primary_light">#80CBC4</color>
+    <color name="primary_dark">#00796B</color>
+    <color name="accent">#4DB6AC</color>
+    <color name="muted_lavender">#2A3942</color>
+    <color name="muted_taupe">#37474F</color>
+    <color name="overlay_lavender">#1A26A69A</color>
+    <color name="overlay_taupe">#1A4DB6AC</color>
+    <color name="overlay_sage">#1A8E968E</color>
+    <color name="overlay_green">#1A26A69A</color>
+    
+    <!-- Backgrounds -->
+    <color name="background_start">#05090A</color>
+    <color name="background_mid">#080E11</color>
+    <color name="background_end">#0A1114</color>
+    <color name="surface">#05090A</color>
+    <color name="card">#0C1418</color>
+    <color name="card_stroke">#1E2A32</color>
+    
+    <!-- Text Colors -->
+    <color name="text_main">#E0E0E0</color>
+    <color name="text_on_primary">#000000</color>
+    
+    <!-- Missing Text Colors used in layouts -->
+    <color name="text_dark">#E0E0E0</color>
+    <color name="text_dark_secondary">#B0BEC5</color>
+    <color name="text_primary">#E0E0E0</color>
+    <color name="text_secondary">#90A4AE</color>
+    
+    <!-- Status & Alerts -->
+    <color name="error">#FF8A80</color>
+    <color name="success">#81C784</color>
+    <color name="feedback_neutral_bg">#121B1F</color>
+    <color name="feedback_success_bg">#1B2E20</color>
+    <color name="feedback_error_bg">#2E1B1B</color>
+    <color name="quiz_option_text">#E0E0E0</color>
+    <color name="quiz_option_feedback_text">#FFFFFF</color>
+
+    <!-- Wordle Colors -->
+    <color name="wordle_correct">#6AAA64</color>
+    <color name="wordle_misplaced">#C9B458</color>
+    <color name="wordle_absent">#3A3A3C</color>
+    <color name="wordle_empty_stroke">#3A3A3C</color>
+    <color name="wordle_key_bg">#818384</color>
+    <color name="wordle_key_text">#FFFFFF</color>
+
+    <!-- Legacy / Compatibility -->
+    <color name="purple_700">#26A69A</color>
+    <color name="teal_200">#4DB6AC</color>
+</resources>

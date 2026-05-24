@@ -1,0 +1,59 @@
+<resources>
+    <style name="Theme.KelimeQuiz" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryContainer">@color/primary_dark</item>
+        <item name="colorSecondary">@color/accent</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorSurfaceVariant">@color/surface_variant</item>
+        <item name="colorOnPrimary">@color/text_on_primary</item>
+        <item name="colorOnSurface">@color/text_main</item>
+        <item name="android:windowBackground">@color/background_start</item>
+        <item name="android:navigationBarColor">@color/background_end</item>
+        <item name="android:statusBarColor">@color/background_start</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <!-- Ana Buton Stili -->
+    <style name="AppButtonPrimary" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/primary</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="android:textColor">@color/text_on_primary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:minHeight">56dp</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+
+    <!-- İkincil Buton Stili -->
+    <style name="AppButtonSecondary" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="cornerRadius">16dp</item>
+        <item name="strokeColor">@color/primary</item>
+        <item name="strokeWidth">1.5dp</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:minHeight">56dp</item>
+    </style>
+
+    <!-- Üçüncül Buton Stili (Kelime Zinciri vb. için) -->
+    <style name="AppButtonTertiary" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/accent</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:minHeight">56dp</item>
+    </style>
+
+    <!-- Ghost / Text Buton Stili -->
+    <style name="AppButtonGhost" parent="Widget.Material3.Button.TextButton">
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Giriş Alanı (Input) Stili -->
+    <style name="AppInput" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/primary</item>
+        <item name="boxCornerRadiusTopStart">14dp</item>
+        <item name="boxCornerRadiusTopEnd">14dp</item>
+        <item name="boxCornerRadiusBottomStart">14dp</item>
+        <item name="boxCornerRadiusBottomEnd">14dp</item>
+        <item name="hintTextColor">@color/primary</item>
+    </style>
+</resources>
