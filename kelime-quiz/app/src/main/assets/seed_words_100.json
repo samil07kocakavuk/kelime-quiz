@@ -2,7 +2,7 @@
     {
         "engWord":  "dog",
         "trWord":  "köpek",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F415.png",
+        "picturePath":  "assets/word-images/dog.png",
         "samplesText":  "The dog is friendly.",
         "category":  "Hayvanlar",
         "cefrLevel":  "A1"
@@ -10,7 +10,7 @@
     {
         "engWord":  "cat",
         "trWord":  "kedi",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F408.png",
+        "picturePath":  "assets/word-images/cat.png",
         "samplesText":  "The cat sleeps on the sofa.",
         "category":  "Hayvanlar",
         "cefrLevel":  "A1"
@@ -18,7 +18,7 @@
     {
         "engWord":  "bird",
         "trWord":  "kuş",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F426.png",
+        "picturePath":  "assets/word-images/dove.png",
         "samplesText":  "The bird can fly.",
         "category":  "Hayvanlar",
         "cefrLevel":  "A1"
@@ -26,7 +26,7 @@
     {
         "engWord":  "fish",
         "trWord":  "balık",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F41F.png",
+        "picturePath":  "assets/word-images/fish.png",
         "samplesText":  "The fish swims in the water.",
         "category":  "Hayvanlar",
         "cefrLevel":  "A1"
@@ -34,7 +34,7 @@
     {
         "engWord":  "horse",
         "trWord":  "at",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F40E.png",
+        "picturePath":  "assets/word-images/horses.png",
         "samplesText":  "The horse runs fast.",
         "category":  "Hayvanlar",
         "cefrLevel":  "A1"
@@ -42,7 +42,7 @@
     {
         "engWord":  "cow",
         "trWord":  "inek",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F404.png",
+        "picturePath":  "assets/word-images/cow.png",
         "samplesText":  "The cow is on the farm.",
         "category":  "Hayvanlar",
         "cefrLevel":  "A1"
@@ -50,7 +50,7 @@
     {
         "engWord":  "sheep",
         "trWord":  "koyun",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F411.png",
+        "picturePath":  "assets/word-images/sheep.png",
         "samplesText":  "The sheep is white.",
         "category":  "Hayvanlar",
         "cefrLevel":  "A1"
@@ -58,7 +58,7 @@
     {
         "engWord":  "chicken",
         "trWord":  "tavuk",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F414.png",
+        "picturePath":  "assets/word-images/chicken.png",
         "samplesText":  "The chicken is in the garden.",
         "category":  "Hayvanlar",
         "cefrLevel":  "A1"
@@ -66,7 +66,7 @@
     {
         "engWord":  "elephant",
         "trWord":  "fil",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F418.png",
+        "picturePath":  "assets/word-images/elephant.png",
         "samplesText":  "The elephant is very big.",
         "category":  "Hayvanlar",
         "cefrLevel":  "A1"
@@ -74,7 +74,7 @@
     {
         "engWord":  "lion",
         "trWord":  "aslan",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F981.png",
+        "picturePath":  "assets/word-images/lion.png",
         "samplesText":  "The lion is strong.",
         "category":  "Hayvanlar",
         "cefrLevel":  "A1"
@@ -82,7 +82,7 @@
     {
         "engWord":  "doctor",
         "trWord":  "doktor",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1FA7A.png",
+        "picturePath":  "assets/word-images/doctor.png",
         "samplesText":  "The doctor helps sick people.",
         "category":  "Meslekler",
         "cefrLevel":  "A2"
@@ -90,7 +90,7 @@
     {
         "engWord":  "teacher",
         "trWord":  "öğretmen",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F3EB.png",
+        "picturePath":  "assets/word-images/teacher.png",
         "samplesText":  "The teacher explains the lesson.",
         "category":  "Meslekler",
         "cefrLevel":  "A2"
@@ -98,7 +98,7 @@
     {
         "engWord":  "engineer",
         "trWord":  "mühendis",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F527.png",
+        "picturePath":  "assets/word-images/engineer.png",
         "samplesText":  "The engineer builds a bridge.",
         "category":  "Meslekler",
         "cefrLevel":  "A2"
@@ -106,7 +106,7 @@
     {
         "engWord":  "farmer",
         "trWord":  "çiftçi",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F33E.png",
+        "picturePath":  "assets/word-images/farmer.png",
         "samplesText":  "The farmer grows vegetables.",
         "category":  "Meslekler",
         "cefrLevel":  "A2"
@@ -114,7 +114,7 @@
     {
         "engWord":  "cook",
         "trWord":  "aşçı",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F373.png",
+        "picturePath":  "assets/word-images/chef.png",
         "samplesText":  "The cook makes soup.",
         "category":  "Meslekler",
         "cefrLevel":  "A2"
@@ -122,7 +122,7 @@
     {
         "engWord":  "artist",
         "trWord":  "sanatçı",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F3A8.png",
+        "picturePath":  "assets/word-images/painter.png",
         "samplesText":  "The artist paints a picture.",
         "category":  "Meslekler",
         "cefrLevel":  "A2"
@@ -130,7 +130,7 @@
     {
         "engWord":  "police officer",
         "trWord":  "polis memuru",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F46E.png",
+        "picturePath":  "assets/word-images/police.png",
         "samplesText":  "The police officer works in the city.",
         "category":  "Meslekler",
         "cefrLevel":  "A2"
@@ -138,7 +138,7 @@
     {
         "engWord":  "pilot",
         "trWord":  "pilot",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/2708-FE0F.png",
+        "picturePath":  "assets/word-images/pilot.png",
         "samplesText":  "The pilot flies a plane.",
         "category":  "Meslekler",
         "cefrLevel":  "A2"
@@ -146,7 +146,7 @@
     {
         "engWord":  "scientist",
         "trWord":  "bilim insanı",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F52C.png",
+        "picturePath":  "assets/word-images/scientist.png",
         "samplesText":  "The scientist works in a lab.",
         "category":  "Meslekler",
         "cefrLevel":  "A2"
@@ -154,7 +154,7 @@
     {
         "engWord":  "firefighter",
         "trWord":  "itfaiyeci",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F692.png",
+        "picturePath":  "assets/word-images/firefighter.png",
         "samplesText":  "The firefighter stops the fire.",
         "category":  "Meslekler",
         "cefrLevel":  "A2"
@@ -162,7 +162,7 @@
     {
         "engWord":  "football",
         "trWord":  "futbol",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/26BD.png",
+        "picturePath":  "assets/word-images/football.png",
         "samplesText":  "Football is a popular sport.",
         "category":  "Sporlar",
         "cefrLevel":  "B1"
@@ -170,7 +170,7 @@
     {
         "engWord":  "basketball",
         "trWord":  "basketbol",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F3C0.png",
+        "picturePath":  "assets/word-images/basketball.png",
         "samplesText":  "Basketball needs a ball and a basket.",
         "category":  "Sporlar",
         "cefrLevel":  "B1"
@@ -178,7 +178,7 @@
     {
         "engWord":  "tennis",
         "trWord":  "tenis",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F3BE.png",
+        "picturePath":  "assets/word-images/tennis.png",
         "samplesText":  "Tennis is played with a racket.",
         "category":  "Sporlar",
         "cefrLevel":  "B1"
@@ -186,7 +186,7 @@
     {
         "engWord":  "swimming",
         "trWord":  "yüzme",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F3CA.png",
+        "picturePath":  "assets/word-images/swimming.png",
         "samplesText":  "Swimming is good exercise.",
         "category":  "Sporlar",
         "cefrLevel":  "B1"
@@ -194,7 +194,7 @@
     {
         "engWord":  "running",
         "trWord":  "koşu",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F3C3.png",
+        "picturePath":  "assets/word-images/running.png",
         "samplesText":  "Running makes you strong.",
         "category":  "Sporlar",
         "cefrLevel":  "B1"
@@ -202,7 +202,7 @@
     {
         "engWord":  "cycling",
         "trWord":  "bisiklet sporu",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F6B4.png",
+        "picturePath":  "assets/word-images/cycling.png",
         "samplesText":  "Cycling is fun in the park.",
         "category":  "Sporlar",
         "cefrLevel":  "B1"
@@ -210,7 +210,7 @@
     {
         "engWord":  "boxing",
         "trWord":  "boks",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F94A.png",
+        "picturePath":  "assets/word-images/boxing.png",
         "samplesText":  "Boxing needs gloves.",
         "category":  "Sporlar",
         "cefrLevel":  "B1"
@@ -218,7 +218,7 @@
     {
         "engWord":  "baseball",
         "trWord":  "beyzbol",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/26BE.png",
+        "picturePath":  "assets/word-images/baseball-ball.png",
         "samplesText":  "Baseball is played with a bat.",
         "category":  "Sporlar",
         "cefrLevel":  "B1"
@@ -226,7 +226,7 @@
     {
         "engWord":  "volleyball",
         "trWord":  "voleybol",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F3D0.png",
+        "picturePath":  "assets/word-images/volleyball.png",
         "samplesText":  "Volleyball is played over a net.",
         "category":  "Sporlar",
         "cefrLevel":  "B1"
@@ -234,7 +234,7 @@
     {
         "engWord":  "golf",
         "trWord":  "golf",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/26F3.png",
+        "picturePath":  "assets/word-images/golf-field.png",
         "samplesText":  "Golf is played on a large field.",
         "category":  "Sporlar",
         "cefrLevel":  "B1"
@@ -242,7 +242,7 @@
     {
         "engWord":  "apple",
         "trWord":  "elma",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F34E.png",
+        "picturePath":  "assets/word-images/apple.png",
         "samplesText":  "The apple is red.",
         "category":  "Yiyecekler",
         "cefrLevel":  "A1"
@@ -250,7 +250,7 @@
     {
         "engWord":  "banana",
         "trWord":  "muz",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F34C.png",
+        "picturePath":  "assets/word-images/banana.png",
         "samplesText":  "The banana is yellow.",
         "category":  "Yiyecekler",
         "cefrLevel":  "A1"
@@ -258,7 +258,7 @@
     {
         "engWord":  "bread",
         "trWord":  "ekmek",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F35E.png",
+        "picturePath":  "assets/word-images/bread.png",
         "samplesText":  "Bread is on the table.",
         "category":  "Yiyecekler",
         "cefrLevel":  "A1"
@@ -266,7 +266,7 @@
     {
         "engWord":  "milk",
         "trWord":  "süt",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F95B.png",
+        "picturePath":  "assets/word-images/milk.png",
         "samplesText":  "I drink milk in the morning.",
         "category":  "Yiyecekler",
         "cefrLevel":  "A1"
@@ -274,7 +274,7 @@
     {
         "engWord":  "egg",
         "trWord":  "yumurta",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F95A.png",
+        "picturePath":  "assets/word-images/eggs.png",
         "samplesText":  "An egg is in the bowl.",
         "category":  "Yiyecekler",
         "cefrLevel":  "A1"
@@ -282,7 +282,7 @@
     {
         "engWord":  "cheese",
         "trWord":  "peynir",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F9C0.png",
+        "picturePath":  "assets/word-images/cheese.png",
         "samplesText":  "Cheese is delicious.",
         "category":  "Yiyecekler",
         "cefrLevel":  "A1"
@@ -290,7 +290,7 @@
     {
         "engWord":  "rice",
         "trWord":  "pirinç",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F35A.png",
+        "picturePath":  "assets/word-images/rice.png",
         "samplesText":  "Rice is hot.",
         "category":  "Yiyecekler",
         "cefrLevel":  "A1"
@@ -298,7 +298,7 @@
     {
         "engWord":  "soup",
         "trWord":  "çorba",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F372.png",
+        "picturePath":  "assets/word-images/soup.png",
         "samplesText":  "The soup is warm.",
         "category":  "Yiyecekler",
         "cefrLevel":  "A1"
@@ -306,7 +306,7 @@
     {
         "engWord":  "water",
         "trWord":  "su",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F4A7.png",
+        "picturePath":  "assets/word-images/water.png",
         "samplesText":  "Water is important.",
         "category":  "Yiyecekler",
         "cefrLevel":  "A1"
@@ -314,7 +314,7 @@
     {
         "engWord":  "cake",
         "trWord":  "kek",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F370.png",
+        "picturePath":  "assets/word-images/cake.png",
         "samplesText":  "The cake is sweet.",
         "category":  "Yiyecekler",
         "cefrLevel":  "A1"
@@ -322,7 +322,7 @@
     {
         "engWord":  "house",
         "trWord":  "ev",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F3E0.png",
+        "picturePath":  "assets/word-images/home.png",
         "samplesText":  "The house is small.",
         "category":  "Ev ve Eşyalar",
         "cefrLevel":  "A1"
@@ -330,7 +330,7 @@
     {
         "engWord":  "room",
         "trWord":  "oda",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F6CB-FE0F.png",
+        "picturePath":  "assets/word-images/room.png",
         "samplesText":  "My room is clean.",
         "category":  "Ev ve Eşyalar",
         "cefrLevel":  "A1"
@@ -338,7 +338,7 @@
     {
         "engWord":  "bed",
         "trWord":  "yatak",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F6CF-FE0F.png",
+        "picturePath":  "assets/word-images/double-bed.png",
         "samplesText":  "The bed is comfortable.",
         "category":  "Ev ve Eşyalar",
         "cefrLevel":  "A1"
@@ -346,7 +346,7 @@
     {
         "engWord":  "chair",
         "trWord":  "sandalye",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1FA91.png",
+        "picturePath":  "assets/word-images/chair.png",
         "samplesText":  "The chair is near the desk.",
         "category":  "Ev ve Eşyalar",
         "cefrLevel":  "A1"
@@ -354,7 +354,7 @@
     {
         "engWord":  "door",
         "trWord":  "kapı",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F6AA.png",
+        "picturePath":  "assets/word-images/door.png",
         "samplesText":  "Please open the door.",
         "category":  "Ev ve Eşyalar",
         "cefrLevel":  "A1"
@@ -362,7 +362,7 @@
     {
         "engWord":  "key",
         "trWord":  "anahtar",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F511.png",
+        "picturePath":  "assets/word-images/key.png",
         "samplesText":  "The key is in my bag.",
         "category":  "Ev ve Eşyalar",
         "cefrLevel":  "A1"
@@ -370,7 +370,7 @@
     {
         "engWord":  "clock",
         "trWord":  "saat",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F550.png",
+        "picturePath":  "assets/word-images/clock.png",
         "samplesText":  "The clock is on the wall.",
         "category":  "Ev ve Eşyalar",
         "cefrLevel":  "A1"
@@ -378,7 +378,7 @@
     {
         "engWord":  "phone",
         "trWord":  "telefon",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F4F1.png",
+        "picturePath":  "assets/word-images/iphone.png",
         "samplesText":  "My phone is new.",
         "category":  "Ev ve Eşyalar",
         "cefrLevel":  "A1"
@@ -386,7 +386,7 @@
     {
         "engWord":  "computer",
         "trWord":  "bilgisayar",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F4BB.png",
+        "picturePath":  "assets/word-images/computer.png",
         "samplesText":  "The computer is on the desk.",
         "category":  "Ev ve Eşyalar",
         "cefrLevel":  "A1"
@@ -394,7 +394,7 @@
     {
         "engWord":  "book",
         "trWord":  "kitap",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F4D6.png",
+        "picturePath":  "assets/word-images/book.png",
         "samplesText":  "The book is interesting.",
         "category":  "Ev ve Eşyalar",
         "cefrLevel":  "A1"
@@ -402,7 +402,7 @@
     {
         "engWord":  "school",
         "trWord":  "okul",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F3EB.png",
+        "picturePath":  "assets/word-images/school.png",
         "samplesText":  "The school is near my house.",
         "category":  "Okul",
         "cefrLevel":  "A1"
@@ -410,7 +410,7 @@
     {
         "engWord":  "student",
         "trWord":  "öğrenci",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F393.png",
+        "picturePath":  "assets/word-images/student.png",
         "samplesText":  "The student reads a book.",
         "category":  "Okul",
         "cefrLevel":  "A1"
@@ -418,7 +418,7 @@
     {
         "engWord":  "lesson",
         "trWord":  "ders",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F4DA.png",
+        "picturePath":  "assets/word-images/lesson.png",
         "samplesText":  "The lesson starts at nine.",
         "category":  "Okul",
         "cefrLevel":  "A1"
@@ -426,7 +426,7 @@
     {
         "engWord":  "pen",
         "trWord":  "kalem",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F58A-FE0F.png",
+        "picturePath":  "assets/word-images/pencil.png",
         "samplesText":  "I write with a pen.",
         "category":  "Okul",
         "cefrLevel":  "A1"
@@ -434,7 +434,7 @@
     {
         "engWord":  "pencil",
         "trWord":  "kurşun kalem",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/270F-FE0F.png",
+        "picturePath":  "assets/word-images/pencil.png",
         "samplesText":  "The pencil is sharp.",
         "category":  "Okul",
         "cefrLevel":  "A1"
@@ -442,7 +442,7 @@
     {
         "engWord":  "notebook",
         "trWord":  "defter",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F4D3.png",
+        "picturePath":  "assets/word-images/notebook.png",
         "samplesText":  "My notebook is blue.",
         "category":  "Okul",
         "cefrLevel":  "A1"
@@ -450,7 +450,7 @@
     {
         "engWord":  "backpack",
         "trWord":  "sırt çantası",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F392.png",
+        "picturePath":  "assets/word-images/backpack.png",
         "samplesText":  "The backpack is heavy.",
         "category":  "Okul",
         "cefrLevel":  "A1"
@@ -458,7 +458,7 @@
     {
         "engWord":  "ruler",
         "trWord":  "cetvel",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F4CF.png",
+        "picturePath":  "assets/word-images/ruler.png",
         "samplesText":  "Use a ruler for straight lines.",
         "category":  "Okul",
         "cefrLevel":  "A1"
@@ -466,7 +466,7 @@
     {
         "engWord":  "exam",
         "trWord":  "sınav",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F4DD.png",
+        "picturePath":  "assets/word-images/exam.png",
         "samplesText":  "The exam is difficult.",
         "category":  "Okul",
         "cefrLevel":  "A1"
@@ -474,7 +474,7 @@
     {
         "engWord":  "library",
         "trWord":  "kütüphane",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F4DA.png",
+        "picturePath":  "assets/word-images/library.png",
         "samplesText":  "The library is quiet.",
         "category":  "Okul",
         "cefrLevel":  "A1"
@@ -482,7 +482,7 @@
     {
         "engWord":  "car",
         "trWord":  "araba",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F697.png",
+        "picturePath":  "assets/word-images/car.png",
         "samplesText":  "The car is red.",
         "category":  "Ulaşım",
         "cefrLevel":  "A2"
@@ -490,7 +490,7 @@
     {
         "engWord":  "bus",
         "trWord":  "otobüs",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F68C.png",
+        "picturePath":  "assets/word-images/bus.png",
         "samplesText":  "The bus is full.",
         "category":  "Ulaşım",
         "cefrLevel":  "A2"
@@ -498,7 +498,7 @@
     {
         "engWord":  "train",
         "trWord":  "tren",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F686.png",
+        "picturePath":  "assets/word-images/train.png",
         "samplesText":  "The train is fast.",
         "category":  "Ulaşım",
         "cefrLevel":  "A2"
@@ -506,7 +506,7 @@
     {
         "engWord":  "bicycle",
         "trWord":  "bisiklet",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F6B2.png",
+        "picturePath":  "assets/word-images/bicycle.png",
         "samplesText":  "I ride a bicycle.",
         "category":  "Ulaşım",
         "cefrLevel":  "A2"
@@ -514,7 +514,7 @@
     {
         "engWord":  "airplane",
         "trWord":  "uçak",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/2708-FE0F.png",
+        "picturePath":  "assets/word-images/airplane.png",
         "samplesText":  "The airplane is in the sky.",
         "category":  "Ulaşım",
         "cefrLevel":  "A2"
@@ -522,7 +522,7 @@
     {
         "engWord":  "ship",
         "trWord":  "gemi",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F6A2.png",
+        "picturePath":  "assets/word-images/ship.png",
         "samplesText":  "The ship is on the sea.",
         "category":  "Ulaşım",
         "cefrLevel":  "A2"
@@ -530,7 +530,7 @@
     {
         "engWord":  "taxi",
         "trWord":  "taksi",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F695.png",
+        "picturePath":  "assets/word-images/taxi.png",
         "samplesText":  "The taxi is yellow.",
         "category":  "Ulaşım",
         "cefrLevel":  "A2"
@@ -538,7 +538,7 @@
     {
         "engWord":  "truck",
         "trWord":  "kamyon",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F69A.png",
+        "picturePath":  "assets/word-images/truck.png",
         "samplesText":  "The truck carries boxes.",
         "category":  "Ulaşım",
         "cefrLevel":  "A2"
@@ -546,7 +546,7 @@
     {
         "engWord":  "subway",
         "trWord":  "metro",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F687.png",
+        "picturePath":  "assets/word-images/subway.png",
         "samplesText":  "The subway is underground.",
         "category":  "Ulaşım",
         "cefrLevel":  "A2"
@@ -554,7 +554,7 @@
     {
         "engWord":  "rocket",
         "trWord":  "roket",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F680.png",
+        "picturePath":  "assets/word-images/rocket.png",
         "samplesText":  "The rocket goes to space.",
         "category":  "Ulaşım",
         "cefrLevel":  "A2"
@@ -562,7 +562,7 @@
     {
         "engWord":  "sun",
         "trWord":  "güneş",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/2600-FE0F.png",
+        "picturePath":  "assets/word-images/sun.png",
         "samplesText":  "The sun is bright.",
         "category":  "Doğa",
         "cefrLevel":  "B1"
@@ -570,7 +570,7 @@
     {
         "engWord":  "moon",
         "trWord":  "ay",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F319.png",
+        "picturePath":  "assets/word-images/moon.png",
         "samplesText":  "The moon is in the sky.",
         "category":  "Doğa",
         "cefrLevel":  "B1"
@@ -578,7 +578,7 @@
     {
         "engWord":  "star",
         "trWord":  "yıldız",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/2B50.png",
+        "picturePath":  "assets/word-images/star.png",
         "samplesText":  "A star shines at night.",
         "category":  "Doğa",
         "cefrLevel":  "B1"
@@ -586,7 +586,7 @@
     {
         "engWord":  "rain",
         "trWord":  "yağmur",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F327-FE0F.png",
+        "picturePath":  "assets/word-images/rain.png",
         "samplesText":  "Rain falls from the clouds.",
         "category":  "Doğa",
         "cefrLevel":  "B1"
@@ -594,7 +594,7 @@
     {
         "engWord":  "snow",
         "trWord":  "kar",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/2744-FE0F.png",
+        "picturePath":  "assets/word-images/snow.png",
         "samplesText":  "Snow is cold and white.",
         "category":  "Doğa",
         "cefrLevel":  "B1"
@@ -602,7 +602,7 @@
     {
         "engWord":  "tree",
         "trWord":  "ağaç",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F333.png",
+        "picturePath":  "assets/word-images/tree.png",
         "samplesText":  "The tree is tall.",
         "category":  "Doğa",
         "cefrLevel":  "B1"
@@ -610,7 +610,7 @@
     {
         "engWord":  "flower",
         "trWord":  "çiçek",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F33C.png",
+        "picturePath":  "assets/word-images/flower.png",
         "samplesText":  "The flower smells nice.",
         "category":  "Doğa",
         "cefrLevel":  "B1"
@@ -618,7 +618,7 @@
     {
         "engWord":  "mountain",
         "trWord":  "dağ",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/26F0-FE0F.png",
+        "picturePath":  "assets/word-images/mountain.png",
         "samplesText":  "The mountain is high.",
         "category":  "Doğa",
         "cefrLevel":  "B1"
@@ -626,7 +626,7 @@
     {
         "engWord":  "sea",
         "trWord":  "deniz",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F30A.png",
+        "picturePath":  "assets/word-images/sea.png",
         "samplesText":  "The sea is blue.",
         "category":  "Doğa",
         "cefrLevel":  "B1"
@@ -634,7 +634,7 @@
     {
         "engWord":  "fire",
         "trWord":  "ateş",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F525.png",
+        "picturePath":  "assets/word-images/fire.png",
         "samplesText":  "Fire is hot.",
         "category":  "Doğa",
         "cefrLevel":  "B1"
@@ -642,7 +642,7 @@
     {
         "engWord":  "happy",
         "trWord":  "mutlu",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F600.png",
+        "picturePath":  "assets/word-images/happy.png",
         "samplesText":  "She is happy today.",
         "category":  "Sıfatlar",
         "cefrLevel":  "B1"
@@ -650,7 +650,7 @@
     {
         "engWord":  "sad",
         "trWord":  "üzgün",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F622.png",
+        "picturePath":  "assets/word-images/sad.png",
         "samplesText":  "He is sad after the game.",
         "category":  "Sıfatlar",
         "cefrLevel":  "B1"
@@ -658,7 +658,7 @@
     {
         "engWord":  "angry",
         "trWord":  "kızgın",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F620.png",
+        "picturePath":  "assets/word-images/angry.png",
         "samplesText":  "The man is angry.",
         "category":  "Sıfatlar",
         "cefrLevel":  "B1"
@@ -666,7 +666,7 @@
     {
         "engWord":  "fast",
         "trWord":  "hızlı",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F4A8.png",
+        "picturePath":  "assets/word-images/fast.png",
         "samplesText":  "The train is fast.",
         "category":  "Sıfatlar",
         "cefrLevel":  "B1"
@@ -674,7 +674,7 @@
     {
         "engWord":  "slow",
         "trWord":  "yavaş",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F40C.png",
+        "picturePath":  "assets/word-images/slow.png",
         "samplesText":  "The turtle is slow.",
         "category":  "Sıfatlar",
         "cefrLevel":  "B1"
@@ -682,7 +682,7 @@
     {
         "engWord":  "hot",
         "trWord":  "sıcak",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F525.png",
+        "picturePath":  "assets/word-images/hot.png",
         "samplesText":  "The tea is hot.",
         "category":  "Sıfatlar",
         "cefrLevel":  "B1"
@@ -690,7 +690,7 @@
     {
         "engWord":  "cold",
         "trWord":  "soğuk",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/2744-FE0F.png",
+        "picturePath":  "assets/word-images/cold.png",
         "samplesText":  "The water is cold.",
         "category":  "Sıfatlar",
         "cefrLevel":  "B1"
@@ -698,7 +698,7 @@
     {
         "engWord":  "big",
         "trWord":  "büyük",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F418.png",
+        "picturePath":  "assets/word-images/big.png",
         "samplesText":  "The box is big.",
         "category":  "Sıfatlar",
         "cefrLevel":  "B1"
@@ -706,7 +706,7 @@
     {
         "engWord":  "small",
         "trWord":  "küçük",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F41C.png",
+        "picturePath":  "assets/word-images/small.png",
         "samplesText":  "The ant is small.",
         "category":  "Sıfatlar",
         "cefrLevel":  "B1"
@@ -714,7 +714,7 @@
     {
         "engWord":  "beautiful",
         "trWord":  "güzel",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F33A.png",
+        "picturePath":  "assets/word-images/beautiful.png",
         "samplesText":  "The flower is beautiful.",
         "category":  "Sıfatlar",
         "cefrLevel":  "B1"
@@ -722,7 +722,7 @@
     {
         "engWord":  "run",
         "trWord":  "koşmak",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F3C3.png",
+        "picturePath":  "assets/word-images/running.png",
         "samplesText":  "I run every morning.",
         "category":  "Fiiller",
         "cefrLevel":  "B1"
@@ -730,7 +730,7 @@
     {
         "engWord":  "eat",
         "trWord":  "yemek",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F37D-FE0F.png",
+        "picturePath":  "assets/word-images/eating.png",
         "samplesText":  "We eat dinner at home.",
         "category":  "Fiiller",
         "cefrLevel":  "B1"
@@ -738,7 +738,7 @@
     {
         "engWord":  "drink",
         "trWord":  "içmek",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F964.png",
+        "picturePath":  "assets/word-images/drinking-water.png",
         "samplesText":  "I drink water.",
         "category":  "Fiiller",
         "cefrLevel":  "B1"
@@ -746,7 +746,7 @@
     {
         "engWord":  "read",
         "trWord":  "okumak",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F4D6.png",
+        "picturePath":  "assets/word-images/reading-book.png",
         "samplesText":  "She reads a book.",
         "category":  "Fiiller",
         "cefrLevel":  "B1"
@@ -754,7 +754,7 @@
     {
         "engWord":  "write",
         "trWord":  "yazmak",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/270D-FE0F.png",
+        "picturePath":  "assets/word-images/write.png",
         "samplesText":  "He writes a letter.",
         "category":  "Fiiller",
         "cefrLevel":  "B1"
@@ -762,7 +762,7 @@
     {
         "engWord":  "listen",
         "trWord":  "dinlemek",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F3A7.png",
+        "picturePath":  "assets/word-images/music.png",
         "samplesText":  "I listen to music.",
         "category":  "Fiiller",
         "cefrLevel":  "B1"
@@ -770,7 +770,7 @@
     {
         "engWord":  "speak",
         "trWord":  "konuşmak",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F5E3-FE0F.png",
+        "picturePath":  "assets/word-images/speak.png",
         "samplesText":  "They speak English.",
         "category":  "Fiiller",
         "cefrLevel":  "B1"
@@ -778,7 +778,7 @@
     {
         "engWord":  "sleep",
         "trWord":  "uyumak",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F634.png",
+        "picturePath":  "assets/word-images/sleep.png",
         "samplesText":  "The baby sleeps at night.",
         "category":  "Fiiller",
         "cefrLevel":  "B1"
@@ -786,7 +786,7 @@
     {
         "engWord":  "work",
         "trWord":  "çalışmak",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F4BC.png",
+        "picturePath":  "assets/word-images/work.png",
         "samplesText":  "My father works in an office.",
         "category":  "Fiiller",
         "cefrLevel":  "B1"
@@ -794,7 +794,7 @@
     {
         "engWord":  "play",
         "trWord":  "oynamak",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F3AE.png",
+        "picturePath":  "assets/word-images/play.png",
         "samplesText":  "Children play in the park.",
         "category":  "Fiiller",
         "cefrLevel":  "B1"
@@ -802,7 +802,7 @@
     {
         "engWord":  "head",
         "trWord":  "baş",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F464.png",
+        "picturePath":  "assets/word-images/head.png",
         "samplesText":  "My head hurts.",
         "category":  "Sağlık ve Vücut",
         "cefrLevel":  "B1"
@@ -810,7 +810,7 @@
     {
         "engWord":  "hand",
         "trWord":  "el",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/270B.png",
+        "picturePath":  "assets/word-images/hand.png",
         "samplesText":  "Raise your hand.",
         "category":  "Sağlık ve Vücut",
         "cefrLevel":  "B1"
@@ -818,7 +818,7 @@
     {
         "engWord":  "eye",
         "trWord":  "göz",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F441-FE0F.png",
+        "picturePath":  "assets/word-images/eye.png",
         "samplesText":  "I have two eyes.",
         "category":  "Sağlık ve Vücut",
         "cefrLevel":  "B1"
@@ -826,7 +826,7 @@
     {
         "engWord":  "ear",
         "trWord":  "kulak",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F442.png",
+        "picturePath":  "assets/word-images/ear.png",
         "samplesText":  "My ear is cold.",
         "category":  "Sağlık ve Vücut",
         "cefrLevel":  "B1"
@@ -834,7 +834,7 @@
     {
         "engWord":  "mouth",
         "trWord":  "ağız",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F444.png",
+        "picturePath":  "assets/word-images/mouth.png",
         "samplesText":  "Open your mouth.",
         "category":  "Sağlık ve Vücut",
         "cefrLevel":  "B1"
@@ -842,7 +842,7 @@
     {
         "engWord":  "foot",
         "trWord":  "ayak",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F9B6.png",
+        "picturePath":  "assets/word-images/foot.png",
         "samplesText":  "My foot hurts.",
         "category":  "Sağlık ve Vücut",
         "cefrLevel":  "B1"
@@ -850,7 +850,7 @@
     {
         "engWord":  "heart",
         "trWord":  "kalp",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/2764-FE0F.png",
+        "picturePath":  "assets/word-images/heart.png",
         "samplesText":  "The heart is important.",
         "category":  "Sağlık ve Vücut",
         "cefrLevel":  "B1"
@@ -858,7 +858,7 @@
     {
         "engWord":  "brain",
         "trWord":  "beyin",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F9E0.png",
+        "picturePath":  "assets/word-images/brain.png",
         "samplesText":  "The brain controls the body.",
         "category":  "Sağlık ve Vücut",
         "cefrLevel":  "B1"
@@ -866,7 +866,7 @@
     {
         "engWord":  "medicine",
         "trWord":  "ilaç",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F48A.png",
+        "picturePath":  "assets/word-images/medicine.png",
         "samplesText":  "Medicine can help you.",
         "category":  "Sağlık ve Vücut",
         "cefrLevel":  "B1"
@@ -874,7 +874,7 @@
     {
         "engWord":  "hospital",
         "trWord":  "hastane",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F3E5.png",
+        "picturePath":  "assets/word-images/hospital.png",
         "samplesText":  "The hospital is open.",
         "category":  "Sağlık ve Vücut",
         "cefrLevel":  "B1"
@@ -882,7 +882,7 @@
     {
         "engWord":  "morning",
         "trWord":  "sabah",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F305.png",
+        "picturePath":  "assets/word-images/morning.png",
         "samplesText":  "I wake up in the morning.",
         "category":  "Günlük Yaşam",
         "cefrLevel":  "A2"
@@ -890,7 +890,7 @@
     {
         "engWord":  "night",
         "trWord":  "gece",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F303.png",
+        "picturePath":  "assets/word-images/night.png",
         "samplesText":  "The city is quiet at night.",
         "category":  "Günlük Yaşam",
         "cefrLevel":  "A2"
@@ -898,7 +898,7 @@
     {
         "engWord":  "family",
         "trWord":  "aile",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F46A.png",
+        "picturePath":  "assets/word-images/family.png",
         "samplesText":  "My family is at home.",
         "category":  "Günlük Yaşam",
         "cefrLevel":  "A2"
@@ -906,7 +906,7 @@
     {
         "engWord":  "friend",
         "trWord":  "arkadaş",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F9D1-200D-1F91D-200D-1F9D1.png",
+        "picturePath":  "assets/word-images/friend.png",
         "samplesText":  "My friend is kind.",
         "category":  "Günlük Yaşam",
         "cefrLevel":  "A2"
@@ -914,7 +914,7 @@
     {
         "engWord":  "money",
         "trWord":  "para",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F4B0.png",
+        "picturePath":  "assets/word-images/money.png",
         "samplesText":  "Money is in the wallet.",
         "category":  "Günlük Yaşam",
         "cefrLevel":  "A2"
@@ -922,7 +922,7 @@
     {
         "engWord":  "market",
         "trWord":  "market",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F6D2.png",
+        "picturePath":  "assets/word-images/market.png",
         "samplesText":  "The market is busy.",
         "category":  "Günlük Yaşam",
         "cefrLevel":  "A2"
@@ -930,7 +930,7 @@
     {
         "engWord":  "street",
         "trWord":  "sokak",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F6E3-FE0F.png",
+        "picturePath":  "assets/word-images/street.png",
         "samplesText":  "The street is long.",
         "category":  "Günlük Yaşam",
         "cefrLevel":  "A2"
@@ -938,7 +938,7 @@
     {
         "engWord":  "bag",
         "trWord":  "çanta",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F45C.png",
+        "picturePath":  "assets/word-images/bag.png",
         "samplesText":  "The bag is on the chair.",
         "category":  "Günlük Yaşam",
         "cefrLevel":  "A2"
@@ -946,7 +946,7 @@
     {
         "engWord":  "clothes",
         "trWord":  "kıyafetler",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F455.png",
+        "picturePath":  "assets/word-images/clothes.png",
         "samplesText":  "My clothes are clean.",
         "category":  "Günlük Yaşam",
         "cefrLevel":  "A2"
@@ -954,7 +954,7 @@
     {
         "engWord":  "birthday",
         "trWord":  "doğum günü",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F382.png",
+        "picturePath":  "assets/word-images/birthday.png",
         "samplesText":  "Today is my birthday.",
         "category":  "Günlük Yaşam",
         "cefrLevel":  "A2"
@@ -962,7 +962,7 @@
     {
         "engWord":  "wolf",
         "trWord":  "kurt",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F43E.png",
+        "picturePath":  "assets/word-images/wolf.png",
         "samplesText":  "The wolf hunts in a pack.",
         "category":  "Hayvanlar",
         "cefrLevel":  "A1"
@@ -970,7 +970,7 @@
     {
         "engWord":  "fox",
         "trWord":  "tilki",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F43E.png",
+        "picturePath":  "assets/word-images/fox.png",
         "samplesText":  "The fox moves quietly at night.",
         "category":  "Hayvanlar",
         "cefrLevel":  "A1"
@@ -978,7 +978,7 @@
     {
         "engWord":  "deer",
         "trWord":  "geyik",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F43E.png",
+        "picturePath":  "assets/word-images/deer.png",
         "samplesText":  "A deer crossed the forest path.",
         "category":  "Hayvanlar",
         "cefrLevel":  "A1"
@@ -986,7 +986,7 @@
     {
         "engWord":  "eagle",
         "trWord":  "kartal",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F43E.png",
+        "picturePath":  "assets/word-images/eagle.png",
         "samplesText":  "The eagle watches from above.",
         "category":  "Hayvanlar",
         "cefrLevel":  "A1"
@@ -994,7 +994,7 @@
     {
         "engWord":  "owl",
         "trWord":  "baykuş",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F43E.png",
+        "picturePath":  "assets/word-images/owl.png",
         "samplesText":  "The owl is awake at night.",
         "category":  "Hayvanlar",
         "cefrLevel":  "A1"
@@ -1002,7 +1002,7 @@
     {
         "engWord":  "shark",
         "trWord":  "köpek balığı",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F43E.png",
+        "picturePath":  "assets/word-images/shark.png",
         "samplesText":  "The shark swims near the reef.",
         "category":  "Hayvanlar",
         "cefrLevel":  "A1"
@@ -1010,7 +1010,7 @@
     {
         "engWord":  "whale",
         "trWord":  "balina",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F43E.png",
+        "picturePath":  "assets/word-images/whale.png",
         "samplesText":  "The whale is a huge animal.",
         "category":  "Hayvanlar",
         "cefrLevel":  "A1"
@@ -1018,7 +1018,7 @@
     {
         "engWord":  "dolphin",
         "trWord":  "yunus",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F43E.png",
+        "picturePath":  "assets/word-images/dolphin.png",
         "samplesText":  "The dolphin jumps out of the sea.",
         "category":  "Hayvanlar",
         "cefrLevel":  "A1"
@@ -1026,7 +1026,7 @@
     {
         "engWord":  "turtle",
         "trWord":  "kaplumbağa",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F43E.png",
+        "picturePath":  "assets/word-images/sea-turtle.png",
         "samplesText":  "The turtle moves slowly.",
         "category":  "Hayvanlar",
         "cefrLevel":  "A1"
@@ -1034,7 +1034,7 @@
     {
         "engWord":  "rabbit",
         "trWord":  "tavşan",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F43E.png",
+        "picturePath":  "assets/word-images/rabbit.png",
         "samplesText":  "The rabbit hides in the grass.",
         "category":  "Hayvanlar",
         "cefrLevel":  "A1"
@@ -1042,7 +1042,7 @@
     {
         "engWord":  "goat",
         "trWord":  "keçi",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F43E.png",
+        "picturePath":  "assets/word-images/goat.png",
         "samplesText":  "The goat climbs the hill.",
         "category":  "Hayvanlar",
         "cefrLevel":  "A1"
@@ -1050,7 +1050,7 @@
     {
         "engWord":  "duck",
         "trWord":  "ördek",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F43E.png",
+        "picturePath":  "assets/word-images/duck.png",
         "samplesText":  "The duck swims across the pond.",
         "category":  "Hayvanlar",
         "cefrLevel":  "A1"
@@ -1058,7 +1058,7 @@
     {
         "engWord":  "bee",
         "trWord":  "arı",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F43E.png",
+        "picturePath":  "assets/word-images/bee.png",
         "samplesText":  "The bee collects nectar.",
         "category":  "Hayvanlar",
         "cefrLevel":  "A1"
@@ -1066,7 +1066,7 @@
     {
         "engWord":  "ant",
         "trWord":  "karınca",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F43E.png",
+        "picturePath":  "assets/word-images/ant.png",
         "samplesText":  "The ant carries food.",
         "category":  "Hayvanlar",
         "cefrLevel":  "A1"
@@ -1074,7 +1074,7 @@
     {
         "engWord":  "architect",
         "trWord":  "mimar",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F4BC.png",
+        "picturePath":  "assets/word-images/architect.png",
         "samplesText":  "The architect designed a modern house.",
         "category":  "Meslekler",
         "cefrLevel":  "A2"
@@ -1082,7 +1082,7 @@
     {
         "engWord":  "lawyer",
         "trWord":  "avukat",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F4BC.png",
+        "picturePath":  "assets/word-images/lawyer.png",
         "samplesText":  "The lawyer explained the case.",
         "category":  "Meslekler",
         "cefrLevel":  "A2"
@@ -1090,7 +1090,7 @@
     {
         "engWord":  "journalist",
         "trWord":  "gazeteci",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F4BC.png",
+        "picturePath":  "assets/word-images/journalist.png",
         "samplesText":  "The journalist wrote an article.",
         "category":  "Meslekler",
         "cefrLevel":  "A2"
@@ -1098,7 +1098,7 @@
     {
         "engWord":  "pharmacist",
         "trWord":  "eczacı",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F4BC.png",
+        "picturePath":  "assets/word-images/pharmacist.png",
         "samplesText":  "The pharmacist prepared the medicine.",
         "category":  "Meslekler",
         "cefrLevel":  "A2"
@@ -1106,7 +1106,7 @@
     {
         "engWord":  "dentist",
         "trWord":  "dişçi",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F4BC.png",
+        "picturePath":  "assets/word-images/dentist.png",
         "samplesText":  "The dentist checked my teeth.",
         "category":  "Meslekler",
         "cefrLevel":  "A2"
@@ -1114,7 +1114,7 @@
     {
         "engWord":  "mechanic",
         "trWord":  "tamirci",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F4BC.png",
+        "picturePath":  "assets/word-images/mechanic.png",
         "samplesText":  "The mechanic repaired the car.",
         "category":  "Meslekler",
         "cefrLevel":  "A2"
@@ -1122,7 +1122,7 @@
     {
         "engWord":  "electrician",
         "trWord":  "elektrikçi",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F4BC.png",
+        "picturePath":  "assets/word-images/electrician.png",
         "samplesText":  "The electrician fixed the cable.",
         "category":  "Meslekler",
         "cefrLevel":  "A2"
@@ -1130,7 +1130,7 @@
     {
         "engWord":  "carpenter",
         "trWord":  "marangoz",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F4BC.png",
+        "picturePath":  "assets/word-images/carpenter.png",
         "samplesText":  "The carpenter made a wooden table.",
         "category":  "Meslekler",
         "cefrLevel":  "A2"
@@ -1138,7 +1138,7 @@
     {
         "engWord":  "accountant",
         "trWord":  "muhasebeci",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F4BC.png",
+        "picturePath":  "assets/word-images/accountant.png",
         "samplesText":  "The accountant checked the numbers.",
         "category":  "Meslekler",
         "cefrLevel":  "A2"
@@ -1146,7 +1146,7 @@
     {
         "engWord":  "designer",
         "trWord":  "tasarımcı",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F4BC.png",
+        "picturePath":  "assets/word-images/graphic-designer.png",
         "samplesText":  "The designer chose new colors.",
         "category":  "Meslekler",
         "cefrLevel":  "A2"
@@ -1154,7 +1154,7 @@
     {
         "engWord":  "translator",
         "trWord":  "çevirmen",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F4BC.png",
+        "picturePath":  "assets/word-images/translation.png",
         "samplesText":  "The translator worked on a book.",
         "category":  "Meslekler",
         "cefrLevel":  "A2"
@@ -1162,7 +1162,7 @@
     {
         "engWord":  "veterinarian",
         "trWord":  "veteriner",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F4BC.png",
+        "picturePath":  "assets/word-images/veteriner.png",
         "samplesText":  "The veterinarian helped the sick dog.",
         "category":  "Meslekler",
         "cefrLevel":  "A2"
@@ -1170,7 +1170,7 @@
     {
         "engWord":  "skiing",
         "trWord":  "kayak",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/26BD.png",
+        "picturePath":  "assets/word-images/ski.png",
         "samplesText":  "Skiing is popular in winter.",
         "category":  "Sporlar",
         "cefrLevel":  "B1"
@@ -1178,7 +1178,7 @@
     {
         "engWord":  "skating",
         "trWord":  "paten",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/26BD.png",
+        "picturePath":  "assets/word-images/ice-hockey.png",
         "samplesText":  "Skating can improve balance.",
         "category":  "Sporlar",
         "cefrLevel":  "B1"
@@ -1186,7 +1186,7 @@
     {
         "engWord":  "wrestling",
         "trWord":  "güreş",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/26BD.png",
+        "picturePath":  "assets/word-images/judo.png",
         "samplesText":  "Wrestling is a traditional sport.",
         "category":  "Sporlar",
         "cefrLevel":  "B1"
@@ -1194,7 +1194,7 @@
     {
         "engWord":  "hockey",
         "trWord":  "hokey",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/26BD.png",
+        "picturePath":  "assets/word-images/ice-hockey.png",
         "samplesText":  "Hockey is played with sticks.",
         "category":  "Sporlar",
         "cefrLevel":  "B1"
@@ -1202,7 +1202,7 @@
     {
         "engWord":  "athletics",
         "trWord":  "atletizm",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/26BD.png",
+        "picturePath":  "assets/word-images/athlete.png",
         "samplesText":  "Athletics includes many events.",
         "category":  "Sporlar",
         "cefrLevel":  "B1"
@@ -1210,7 +1210,7 @@
     {
         "engWord":  "gymnastics",
         "trWord":  "jimnastik",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/26BD.png",
+        "picturePath":  "assets/word-images/gym.png",
         "samplesText":  "Gymnastics requires flexibility.",
         "category":  "Sporlar",
         "cefrLevel":  "B1"
@@ -1218,7 +1218,7 @@
     {
         "engWord":  "climbing",
         "trWord":  "tırmanış",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/26BD.png",
+        "picturePath":  "assets/word-images/climbing-with-rope.png",
         "samplesText":  "Climbing can be difficult and exciting.",
         "category":  "Sporlar",
         "cefrLevel":  "B1"
@@ -1226,7 +1226,7 @@
     {
         "engWord":  "butter",
         "trWord":  "tereyağı",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F37D.png",
+        "picturePath":  "assets/word-images/butter.png",
         "samplesText":  "Butter melts on hot toast.",
         "category":  "Yiyecekler",
         "cefrLevel":  "A1"
@@ -1234,7 +1234,7 @@
     {
         "engWord":  "honey",
         "trWord":  "bal",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F37D.png",
+        "picturePath":  "assets/word-images/honey.png",
         "samplesText":  "Honey tastes sweet.",
         "category":  "Yiyecekler",
         "cefrLevel":  "A1"
@@ -1242,7 +1242,7 @@
     {
         "engWord":  "pasta",
         "trWord":  "makarna",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F37D.png",
+        "picturePath":  "assets/word-images/spaghetti.png",
         "samplesText":  "Pasta is easy to cook.",
         "category":  "Yiyecekler",
         "cefrLevel":  "A1"
@@ -1250,7 +1250,7 @@
     {
         "engWord":  "salad",
         "trWord":  "salata",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F37D.png",
+        "picturePath":  "assets/word-images/salad.png",
         "samplesText":  "A salad can be very colorful.",
         "category":  "Yiyecekler",
         "cefrLevel":  "A1"
@@ -1258,7 +1258,7 @@
     {
         "engWord":  "beef",
         "trWord":  "sığır eti",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F37D.png",
+        "picturePath":  "assets/word-images/meat.png",
         "samplesText":  "Beef is used in many dishes.",
         "category":  "Yiyecekler",
         "cefrLevel":  "A1"
@@ -1266,7 +1266,7 @@
     {
         "engWord":  "pepper",
         "trWord":  "biber",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F37D.png",
+        "picturePath":  "assets/word-images/pepper.png",
         "samplesText":  "The pepper is very spicy.",
         "category":  "Yiyecekler",
         "cefrLevel":  "A1"
@@ -1274,7 +1274,7 @@
     {
         "engWord":  "onion",
         "trWord":  "soğan",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F37D.png",
+        "picturePath":  "assets/word-images/onion.png",
         "samplesText":  "Onion gives flavor to food.",
         "category":  "Yiyecekler",
         "cefrLevel":  "A1"
@@ -1282,7 +1282,7 @@
     {
         "engWord":  "garlic",
         "trWord":  "sarımsak",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F37D.png",
+        "picturePath":  "assets/word-images/garlic.png",
         "samplesText":  "Garlic has a strong smell.",
         "category":  "Yiyecekler",
         "cefrLevel":  "A1"
@@ -1290,7 +1290,7 @@
     {
         "engWord":  "yogurt",
         "trWord":  "yoğurt",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F37D.png",
+        "picturePath":  "assets/word-images/yogurt.png",
         "samplesText":  "Yogurt is common at breakfast.",
         "category":  "Yiyecekler",
         "cefrLevel":  "A1"
@@ -1298,7 +1298,7 @@
     {
         "engWord":  "cereal",
         "trWord":  "mısır gevreği",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F37D.png",
+        "picturePath":  "assets/word-images/cereal.png",
         "samplesText":  "Cereal is a quick breakfast.",
         "category":  "Yiyecekler",
         "cefrLevel":  "A1"
@@ -1306,7 +1306,7 @@
     {
         "engWord":  "curtain",
         "trWord":  "perde",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F3E0.png",
+        "picturePath":  "assets/word-images/curtains.png",
         "samplesText":  "The curtain blocks the sunlight.",
         "category":  "Ev ve Eşyalar",
         "cefrLevel":  "A1"
@@ -1314,7 +1314,7 @@
     {
         "engWord":  "pillow",
         "trWord":  "yastık",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F3E0.png",
+        "picturePath":  "assets/word-images/pillows.png",
         "samplesText":  "The pillow is soft.",
         "category":  "Ev ve Eşyalar",
         "cefrLevel":  "A1"
@@ -1322,7 +1322,7 @@
     {
         "engWord":  "blanket",
         "trWord":  "battaniye",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F3E0.png",
+        "picturePath":  "assets/word-images/blanket.png",
         "samplesText":  "The blanket keeps me warm.",
         "category":  "Ev ve Eşyalar",
         "cefrLevel":  "A1"
@@ -1330,7 +1330,7 @@
     {
         "engWord":  "mirror",
         "trWord":  "ayna",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F3E0.png",
+        "picturePath":  "assets/word-images/mirror.png",
         "samplesText":  "The mirror is in the hallway.",
         "category":  "Ev ve Eşyalar",
         "cefrLevel":  "A1"
@@ -1338,7 +1338,7 @@
     {
         "engWord":  "shelf",
         "trWord":  "raf",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F3E0.png",
+        "picturePath":  "assets/word-images/books.png",
         "samplesText":  "The books are on the shelf.",
         "category":  "Ev ve Eşyalar",
         "cefrLevel":  "A1"
@@ -1346,7 +1346,7 @@
     {
         "engWord":  "drawer",
         "trWord":  "çekmece",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F3E0.png",
+        "picturePath":  "assets/word-images/drawer.png",
         "samplesText":  "I put the keys in the drawer.",
         "category":  "Ev ve Eşyalar",
         "cefrLevel":  "A1"
@@ -1354,7 +1354,7 @@
     {
         "engWord":  "carpet",
         "trWord":  "halı",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F3E0.png",
+        "picturePath":  "assets/word-images/carpet.png",
         "samplesText":  "The carpet is under the table.",
         "category":  "Ev ve Eşyalar",
         "cefrLevel":  "A1"
@@ -1362,7 +1362,7 @@
     {
         "engWord":  "lamp",
         "trWord":  "lamba",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F3E0.png",
+        "picturePath":  "assets/word-images/lamp.png",
         "samplesText":  "The lamp is beside the bed.",
         "category":  "Ev ve Eşyalar",
         "cefrLevel":  "A1"
@@ -1370,7 +1370,7 @@
     {
         "engWord":  "fridge",
         "trWord":  "buzdolabı",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F3E0.png",
+        "picturePath":  "assets/word-images/fridge.png",
         "samplesText":  "The fridge keeps food cold.",
         "category":  "Ev ve Eşyalar",
         "cefrLevel":  "A1"
@@ -1378,7 +1378,7 @@
     {
         "engWord":  "oven",
         "trWord":  "fırın",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F3E0.png",
+        "picturePath":  "assets/word-images/oven.png",
         "samplesText":  "The oven is very hot.",
         "category":  "Ev ve Eşyalar",
         "cefrLevel":  "A1"
@@ -1386,7 +1386,7 @@
     {
         "engWord":  "kettle",
         "trWord":  "su ısıtıcısı",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F3E0.png",
+        "picturePath":  "assets/word-images/electric-kettle.png",
         "samplesText":  "The kettle boils water quickly.",
         "category":  "Ev ve Eşyalar",
         "cefrLevel":  "A1"
@@ -1394,7 +1394,7 @@
     {
         "engWord":  "plate",
         "trWord":  "tabak",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F3E0.png",
+        "picturePath":  "assets/word-images/plate.png",
         "samplesText":  "The plate is on the table.",
         "category":  "Ev ve Eşyalar",
         "cefrLevel":  "A1"
@@ -1402,7 +1402,7 @@
     {
         "engWord":  "bowl",
         "trWord":  "kase",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F3E0.png",
+        "picturePath":  "assets/word-images/bowl.png",
         "samplesText":  "The bowl is full of soup.",
         "category":  "Ev ve Eşyalar",
         "cefrLevel":  "A1"
@@ -1410,7 +1410,7 @@
     {
         "engWord":  "fork",
         "trWord":  "çatal",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F3E0.png",
+        "picturePath":  "assets/word-images/fork.png",
         "samplesText":  "Use a fork to eat pasta.",
         "category":  "Ev ve Eşyalar",
         "cefrLevel":  "A1"
@@ -1418,7 +1418,7 @@
     {
         "engWord":  "spoon",
         "trWord":  "kaşık",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F3E0.png",
+        "picturePath":  "assets/word-images/spoon.png",
         "samplesText":  "The spoon is clean.",
         "category":  "Ev ve Eşyalar",
         "cefrLevel":  "A1"
@@ -1426,7 +1426,7 @@
     {
         "engWord":  "subject",
         "trWord":  "ders konusu",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F393.png",
+        "picturePath":  "assets/word-images/lesson.png",
         "samplesText":  "Math is my favorite subject.",
         "category":  "Okul",
         "cefrLevel":  "A1"
@@ -1434,7 +1434,7 @@
     {
         "engWord":  "homework",
         "trWord":  "ödev",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F393.png",
+        "picturePath":  "assets/word-images/homework.png",
         "samplesText":  "I finished my homework early.",
         "category":  "Okul",
         "cefrLevel":  "A1"
@@ -1442,7 +1442,7 @@
     {
         "engWord":  "dictionary",
         "trWord":  "sözlük",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F393.png",
+        "picturePath":  "assets/word-images/dictionary.png",
         "samplesText":  "The dictionary explains new words.",
         "category":  "Okul",
         "cefrLevel":  "A1"
@@ -1450,7 +1450,7 @@
     {
         "engWord":  "laboratory",
         "trWord":  "laboratuvar",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F393.png",
+        "picturePath":  "assets/word-images/laboratory.png",
         "samplesText":  "Students worked in the laboratory.",
         "category":  "Okul",
         "cefrLevel":  "A1"
@@ -1458,7 +1458,7 @@
     {
         "engWord":  "principal",
         "trWord":  "müdür",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F393.png",
+        "picturePath":  "assets/word-images/principal.png",
         "samplesText":  "The principal spoke to the class.",
         "category":  "Okul",
         "cefrLevel":  "A1"
@@ -1466,7 +1466,7 @@
     {
         "engWord":  "classmate",
         "trWord":  "sınıf arkadaşı",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F393.png",
+        "picturePath":  "assets/word-images/classmates.png",
         "samplesText":  "My classmate helped me.",
         "category":  "Okul",
         "cefrLevel":  "A1"
@@ -1474,7 +1474,7 @@
     {
         "engWord":  "degree",
         "trWord":  "derece",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F393.png",
+        "picturePath":  "assets/word-images/degree-cap.png",
         "samplesText":  "She earned a university degree.",
         "category":  "Okul",
         "cefrLevel":  "A1"
@@ -1482,7 +1482,7 @@
     {
         "engWord":  "lecture",
         "trWord":  "konferans",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F393.png",
+        "picturePath":  "assets/word-images/presentation.png",
         "samplesText":  "The lecture lasted one hour.",
         "category":  "Okul",
         "cefrLevel":  "A1"
@@ -1490,7 +1490,7 @@
     {
         "engWord":  "assignment",
         "trWord":  "görev",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F393.png",
+        "picturePath":  "assets/word-images/assignment.png",
         "samplesText":  "The assignment is due tomorrow.",
         "category":  "Okul",
         "cefrLevel":  "A1"
@@ -1498,7 +1498,7 @@
     {
         "engWord":  "attendance",
         "trWord":  "devam durumu",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F393.png",
+        "picturePath":  "assets/word-images/attendance.png",
         "samplesText":  "Attendance is important at school.",
         "category":  "Okul",
         "cefrLevel":  "A1"
@@ -1506,7 +1506,7 @@
     {
         "engWord":  "scholarship",
         "trWord":  "burs",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F393.png",
+        "picturePath":  "assets/word-images/scholarship.png",
         "samplesText":  "He received a scholarship.",
         "category":  "Okul",
         "cefrLevel":  "A1"
@@ -1514,7 +1514,7 @@
     {
         "engWord":  "tram",
         "trWord":  "tramvay",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F697.png",
+        "picturePath":  "assets/word-images/tram.png",
         "samplesText":  "The tram stops near my house.",
         "category":  "Ulaşım",
         "cefrLevel":  "A2"
@@ -1522,15 +1522,15 @@
     {
         "engWord":  "ferry",
         "trWord":  "vapur",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F697.png",
-        "samplesText":  "The ferry crosses the sea.",
+        "picturePath":  "assets/word-images/boat.png",
+        "samplesText":  "The ferry crosses the sea.",   
         "category":  "Ulaşım",
         "cefrLevel":  "A2"
     },
     {
         "engWord":  "helicopter",
         "trWord":  "helikopter",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F697.png",
+        "picturePath":  "assets/word-images/helicopter.png",
         "samplesText":  "The helicopter flew over the city.",
         "category":  "Ulaşım",
         "cefrLevel":  "A2"
@@ -1538,7 +1538,7 @@
     {
         "engWord":  "scooter",
         "trWord":  "scooter",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F697.png",
+        "picturePath":  "assets/word-images/micro-scooter.png",
         "samplesText":  "A scooter is useful for short trips.",
         "category":  "Ulaşım",
         "cefrLevel":  "A2"
@@ -1546,7 +1546,7 @@
     {
         "engWord":  "van",
         "trWord":  "minibüs",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F697.png",
+        "picturePath":  "assets/word-images/van.png",
         "samplesText":  "The van delivered packages.",
         "category":  "Ulaşım",
         "cefrLevel":  "A2"
@@ -1554,7 +1554,7 @@
     {
         "engWord":  "airport",
         "trWord":  "havaalanı",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F697.png",
+        "picturePath":  "assets/word-images/airport.png",
         "samplesText":  "The airport is far from the center.",
         "category":  "Ulaşım",
         "cefrLevel":  "A2"
@@ -1562,7 +1562,7 @@
     {
         "engWord":  "station",
         "trWord":  "istasyon",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F697.png",
+        "picturePath":  "assets/word-images/station.png",
         "samplesText":  "We met at the train station.",
         "category":  "Ulaşım",
         "cefrLevel":  "A2"
@@ -1570,7 +1570,7 @@
     {
         "engWord":  "ticket",
         "trWord":  "bilet",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F697.png",
+        "picturePath":  "assets/word-images/ticket.png",
         "samplesText":  "I bought a ticket online.",
         "category":  "Ulaşım",
         "cefrLevel":  "A2"
@@ -1578,7 +1578,7 @@
     {
         "engWord":  "traffic",
         "trWord":  "trafik",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F697.png",
+        "picturePath":  "assets/word-images/traffic.png",
         "samplesText":  "Traffic is heavy this morning.",
         "category":  "Ulaşım",
         "cefrLevel":  "A2"
@@ -1586,7 +1586,7 @@
     {
         "engWord":  "route",
         "trWord":  "rota",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F697.png",
+        "picturePath":  "assets/word-images/route.png",
         "samplesText":  "This route is shorter.",
         "category":  "Ulaşım",
         "cefrLevel":  "A2"
@@ -1594,7 +1594,7 @@
     {
         "engWord":  "journey",
         "trWord":  "yolculuk",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F697.png",
+        "picturePath":  "assets/word-images/journey.png",
         "samplesText":  "The journey took three hours.",
         "category":  "Ulaşım",
         "cefrLevel":  "A2"
@@ -1602,7 +1602,7 @@
     {
         "engWord":  "valley",
         "trWord":  "vadi",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F333.png",
+        "picturePath":  "assets/word-images/valley.png",
         "samplesText":  "The valley is green in spring.",
         "category":  "Doğa",
         "cefrLevel":  "B1"
@@ -1610,7 +1610,7 @@
     {
         "engWord":  "desert",
         "trWord":  "çöl",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F333.png",
+        "picturePath":  "assets/word-images/desert.png",
         "samplesText":  "The desert is hot and dry.",
         "category":  "Doğa",
         "cefrLevel":  "B1"
@@ -1618,7 +1618,7 @@
     {
         "engWord":  "island",
         "trWord":  "ada",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F333.png",
+        "picturePath":  "assets/word-images/island.png",
         "samplesText":  "The island has clear water.",
         "category":  "Doğa",
         "cefrLevel":  "B1"
@@ -1626,7 +1626,7 @@
     {
         "engWord":  "cave",
         "trWord":  "mağara",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F333.png",
+        "picturePath":  "assets/word-images/cave.png",
         "samplesText":  "The cave was dark inside.",
         "category":  "Doğa",
         "cefrLevel":  "B1"
@@ -1634,7 +1634,7 @@
     {
         "engWord":  "cliff",
         "trWord":  "uçurum",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F333.png",
+        "picturePath":  "assets/word-images/cliff.png",
         "samplesText":  "The cliff is very steep.",
         "category":  "Doğa",
         "cefrLevel":  "B1"
@@ -1642,7 +1642,7 @@
     {
         "engWord":  "waterfall",
         "trWord":  "şelale",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F333.png",
+        "picturePath":  "assets/word-images/waterfall.png",
         "samplesText":  "The waterfall looks beautiful.",
         "category":  "Doğa",
         "cefrLevel":  "B1"
@@ -1650,7 +1650,7 @@
     {
         "engWord":  "wave",
         "trWord":  "dalga",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F333.png",
+        "picturePath":  "assets/word-images/wave.png",
         "samplesText":  "A big wave hit the shore.",
         "category":  "Doğa",
         "cefrLevel":  "B1"
@@ -1658,7 +1658,7 @@
     {
         "engWord":  "storm",
         "trWord":  "fırtına",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F333.png",
+        "picturePath":  "assets/word-images/storm.png",
         "samplesText":  "The storm damaged the trees.",
         "category":  "Doğa",
         "cefrLevel":  "B1"
@@ -1666,7 +1666,7 @@
     {
         "engWord":  "thunder",
         "trWord":  "gök gürültüsü",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F333.png",
+        "picturePath":  "assets/word-images/thunder.png",
         "samplesText":  "Thunder scared the children.",
         "category":  "Doğa",
         "cefrLevel":  "B1"
@@ -1674,7 +1674,7 @@
     {
         "engWord":  "lightning",
         "trWord":  "şimşek",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F333.png",
+        "picturePath":  "assets/word-images/thunder.png",
         "samplesText":  "Lightning lit up the sky.",
         "category":  "Doğa",
         "cefrLevel":  "B1"
@@ -1682,7 +1682,7 @@
     {
         "engWord":  "fog",
         "trWord":  "sis",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F333.png",
+        "picturePath":  "assets/word-images/fog.png",
         "samplesText":  "Fog covered the road.",
         "category":  "Doğa",
         "cefrLevel":  "B1"
@@ -1690,7 +1690,7 @@
     {
         "engWord":  "climate",
         "trWord":  "iklim",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F333.png",
+        "picturePath":  "assets/word-images/climate.png",
         "samplesText":  "The climate is changing.",
         "category":  "Doğa",
         "cefrLevel":  "B1"
@@ -1698,7 +1698,7 @@
     {
         "engWord":  "soil",
         "trWord":  "toprak",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F333.png",
+        "picturePath":  "assets/word-images/soil.png",
         "samplesText":  "Plants need healthy soil.",
         "category":  "Doğa",
         "cefrLevel":  "B1"
@@ -1706,7 +1706,7 @@
     {
         "engWord":  "branch",
         "trWord":  "dal",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F333.png",
+        "picturePath":  "assets/word-images/branch.png",
         "samplesText":  "A branch fell from the tree.",
         "category":  "Doğa",
         "cefrLevel":  "B1"
@@ -1714,7 +1714,7 @@
     {
         "engWord":  "root",
         "trWord":  "kök",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F333.png",
+        "picturePath":  "assets/word-images/root.png",
         "samplesText":  "The root grows under the ground.",
         "category":  "Doğa",
         "cefrLevel":  "B1"
@@ -1722,7 +1722,7 @@
     {
         "engWord":  "brave",
         "trWord":  "cesur",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/2728.png",
+        "picturePath":  "assets/word-images/brave.png",
         "samplesText":  "The brave child helped his friend.",
         "category":  "Sıfatlar",
         "cefrLevel":  "B1"
@@ -1730,7 +1730,7 @@
     {
         "engWord":  "calm",
         "trWord":  "sakin",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/2728.png",
+        "picturePath":  "assets/word-images/calm.png",
         "samplesText":  "She stayed calm during the exam.",
         "category":  "Sıfatlar",
         "cefrLevel":  "B1"
@@ -1738,7 +1738,7 @@
     {
         "engWord":  "clever",
         "trWord":  "zeki",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/2728.png",
+        "picturePath":  "assets/word-images/clever.png",
         "samplesText":  "The clever student found the answer.",
         "category":  "Sıfatlar",
         "cefrLevel":  "B1"
@@ -1746,7 +1746,7 @@
     {
         "engWord":  "polite",
         "trWord":  "kibar",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/2728.png",
+        "picturePath":  "assets/word-images/polite.png",
         "samplesText":  "He is always polite to guests.",
         "category":  "Sıfatlar",
         "cefrLevel":  "B1"
@@ -1754,7 +1754,7 @@
     {
         "engWord":  "rude",
         "trWord":  "kaba",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/2728.png",
+        "picturePath":  "assets/word-images/rude.png",
         "samplesText":  "That was a rude comment.",
         "category":  "Sıfatlar",
         "cefrLevel":  "B1"
@@ -1762,7 +1762,7 @@
     {
         "engWord":  "ancient",
         "trWord":  "antik",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/2728.png",
+        "picturePath":  "assets/word-images/ancient.png",
         "samplesText":  "They visited an ancient city.",
         "category":  "Sıfatlar",
         "cefrLevel":  "B1"
@@ -1770,7 +1770,7 @@
     {
         "engWord":  "modern",
         "trWord":  "modern",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/2728.png",
+        "picturePath":  "assets/word-images/modern.png",
         "samplesText":  "This is a modern building.",
         "category":  "Sıfatlar",
         "cefrLevel":  "B1"
@@ -1778,7 +1778,7 @@
     {
         "engWord":  "narrow",
         "trWord":  "dar",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/2728.png",
+        "picturePath":  "assets/word-images/narrow.png",
         "samplesText":  "The street is narrow.",
         "category":  "Sıfatlar",
         "cefrLevel":  "B1"
@@ -1786,7 +1786,7 @@
     {
         "engWord":  "wide",
         "trWord":  "geniş",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/2728.png",
+        "picturePath":  "assets/word-images/wide.png",
         "samplesText":  "The room is wide and bright.",
         "category":  "Sıfatlar",
         "cefrLevel":  "B1"
@@ -1794,7 +1794,7 @@
     {
         "engWord":  "empty",
         "trWord":  "boş",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/2728.png",
+        "picturePath":  "assets/word-images/empty.png",
         "samplesText":  "The bottle is empty.",
         "category":  "Sıfatlar",
         "cefrLevel":  "B1"
@@ -1802,7 +1802,7 @@
     {
         "engWord":  "full",
         "trWord":  "dolu",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/2728.png",
+        "picturePath":  "assets/word-images/full-battery.png",
         "samplesText":  "The glass is full of water.",
         "category":  "Sıfatlar",
         "cefrLevel":  "B1"
@@ -1810,7 +1810,7 @@
     {
         "engWord":  "noisy",
         "trWord":  "gürültülü",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/2728.png",
+        "picturePath":  "assets/word-images/noisy.png",
         "samplesText":  "The street is noisy at night.",
         "category":  "Sıfatlar",
         "cefrLevel":  "B1"
@@ -1818,7 +1818,7 @@
     {
         "engWord":  "silent",
         "trWord":  "sessiz",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/2728.png",
+        "picturePath":  "assets/word-images/silent.png",
         "samplesText":  "The classroom became silent.",
         "category":  "Sıfatlar",
         "cefrLevel":  "B1"
@@ -1826,7 +1826,7 @@
     {
         "engWord":  "ordinary",
         "trWord":  "sıradan",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/2728.png",
+        "picturePath":  "assets/word-images/routine.png",
         "samplesText":  "It was an ordinary day.",
         "category":  "Sıfatlar",
         "cefrLevel":  "B1"
@@ -1834,7 +1834,7 @@
     {
         "engWord":  "valuable",
         "trWord":  "değerli",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/2728.png",
+        "picturePath":  "assets/word-images/valueable.png",
         "samplesText":  "This information is valuable.",
         "category":  "Sıfatlar",
         "cefrLevel":  "B1"
@@ -1842,7 +1842,7 @@
     {
         "engWord":  "decide",
         "trWord":  "karar vermek",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F3C3.png",
+        "picturePath":  "assets/word-images/decision.png",
         "samplesText":  "We must decide quickly.",
         "category":  "Fiiller",
         "cefrLevel":  "B1"
@@ -1850,7 +1850,7 @@
     {
         "engWord":  "explain",
         "trWord":  "açıklamak",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F3C3.png",
+        "picturePath":  "assets/word-images/explain.png",
         "samplesText":  "Please explain the rule again.",
         "category":  "Fiiller",
         "cefrLevel":  "B1"
@@ -1858,7 +1858,7 @@
     {
         "engWord":  "improve",
         "trWord":  "geliştirmek",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F3C3.png",
+        "picturePath":  "assets/word-images/improve.png",
         "samplesText":  "Practice can improve your speaking.",
         "category":  "Fiiller",
         "cefrLevel":  "B1"
@@ -1866,7 +1866,7 @@
     {
         "engWord":  "increase",
         "trWord":  "artırmak",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F3C3.png",
+        "picturePath":  "assets/word-images/increase.png",
         "samplesText":  "The company wants to increase sales.",
         "category":  "Fiiller",
         "cefrLevel":  "B1"
@@ -1874,7 +1874,7 @@
     {
         "engWord":  "reduce",
         "trWord":  "azaltmak",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F3C3.png",
+        "picturePath":  "assets/word-images/improve.png",
         "samplesText":  "We should reduce waste.",
         "category":  "Fiiller",
         "cefrLevel":  "B1"
@@ -1882,7 +1882,7 @@
     {
         "engWord":  "compare",
         "trWord":  "karşılaştırmak",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F3C3.png",
+        "picturePath":  "assets/word-images/compare.png",
         "samplesText":  "Compare the two answers.",
         "category":  "Fiiller",
         "cefrLevel":  "B1"
@@ -1890,7 +1890,7 @@
     {
         "engWord":  "prepare",
         "trWord":  "hazırlamak",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F3C3.png",
+        "picturePath":  "assets/word-images/prepare.png",
         "samplesText":  "I prepare breakfast every day.",
         "category":  "Fiiller",
         "cefrLevel":  "B1"
@@ -1898,7 +1898,7 @@
     {
         "engWord":  "protect",
         "trWord":  "korumak",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F3C3.png",
+        "picturePath":  "assets/word-images/protect.png",
         "samplesText":  "Parents protect their children.",
         "category":  "Fiiller",
         "cefrLevel":  "B1"
@@ -1906,7 +1906,7 @@
     {
         "engWord":  "discover",
         "trWord":  "keşfetmek",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F3C3.png",
+        "picturePath":  "assets/word-images/discover.png",
         "samplesText":  "Scientists discover new facts.",
         "category":  "Fiiller",
         "cefrLevel":  "B1"
@@ -1914,7 +1914,7 @@
     {
         "engWord":  "describe",
         "trWord":  "tanımlamak",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F3C3.png",
+        "picturePath":  "assets/word-images/describe.png",
         "samplesText":  "Can you describe the picture?",
         "category":  "Fiiller",
         "cefrLevel":  "B1"
@@ -1922,7 +1922,7 @@
     {
         "engWord":  "suggest",
         "trWord":  "önermek",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F3C3.png",
+        "picturePath":  "assets/word-images/suggest.png",
         "samplesText":  "I suggest a different solution.",
         "category":  "Fiiller",
         "cefrLevel":  "B1"
@@ -1930,7 +1930,7 @@
     {
         "engWord":  "remember",
         "trWord":  "hatırlamak",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F3C3.png",
+        "picturePath":  "assets/word-images/remember.png",
         "samplesText":  "Remember to lock the door.",
         "category":  "Fiiller",
         "cefrLevel":  "B1"
@@ -1938,7 +1938,7 @@
     {
         "engWord":  "forget",
         "trWord":  "unutmak",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F3C3.png",
+        "picturePath":  "assets/word-images/forget.png",
         "samplesText":  "Do not forget your notebook.",
         "category":  "Fiiller",
         "cefrLevel":  "B1"
@@ -1946,7 +1946,7 @@
     {
         "engWord":  "allow",
         "trWord":  "izin vermek",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F3C3.png",
+        "picturePath":  "assets/word-images/allow.png",
         "samplesText":  "The teacher will allow extra time.",
         "category":  "Fiiller",
         "cefrLevel":  "B1"
@@ -1954,7 +1954,7 @@
     {
         "engWord":  "avoid",
         "trWord":  "kaçınmak",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F3C3.png",
+        "picturePath":  "assets/word-images/avoid.png",
         "samplesText":  "Avoid making the same mistake.",
         "category":  "Fiiller",
         "cefrLevel":  "B1"
@@ -1962,7 +1962,7 @@
     {
         "engWord":  "shoulder",
         "trWord":  "omuz",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1FA7A.png",
+        "picturePath":  "assets/word-images/shoulder.png",
         "samplesText":  "My shoulder hurts after training.",
         "category":  "Sağlık ve Vücut",
         "cefrLevel":  "B1"
@@ -1970,7 +1970,7 @@
     {
         "engWord":  "elbow",
         "trWord":  "dirsek",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1FA7A.png",
+        "picturePath":  "assets/word-images/elbow.png",
         "samplesText":  "He hit his elbow on the table.",
         "category":  "Sağlık ve Vücut",
         "cefrLevel":  "B1"
@@ -1978,7 +1978,7 @@
     {
         "engWord":  "knee",
         "trWord":  "diz",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1FA7A.png",
+        "picturePath":  "assets/word-images/knee.png",
         "samplesText":  "Her knee is injured.",
         "category":  "Sağlık ve Vücut",
         "cefrLevel":  "B1"
@@ -1986,7 +1986,7 @@
     {
         "engWord":  "ankle",
         "trWord":  "ayak bileği",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1FA7A.png",
+        "picturePath":  "assets/word-images/ankle.png",
         "samplesText":  "I twisted my ankle.",
         "category":  "Sağlık ve Vücut",
         "cefrLevel":  "B1"
@@ -1994,7 +1994,7 @@
     {
         "engWord":  "finger",
         "trWord":  "parmak",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1FA7A.png",
+        "picturePath":  "assets/word-images/finger.png",
         "samplesText":  "He cut his finger.",
         "category":  "Sağlık ve Vücut",
         "cefrLevel":  "B1"
@@ -2002,7 +2002,7 @@
     {
         "engWord":  "toe",
         "trWord":  "ayak parmağı",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1FA7A.png",
+        "picturePath":  "assets/word-images/toe.png",
         "samplesText":  "My toe is cold.",
         "category":  "Sağlık ve Vücut",
         "cefrLevel":  "B1"
@@ -2010,7 +2010,7 @@
     {
         "engWord":  "stomach",
         "trWord":  "mide",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1FA7A.png",
+        "picturePath":  "assets/word-images/stomach.png",
         "samplesText":  "My stomach feels full.",
         "category":  "Sağlık ve Vücut",
         "cefrLevel":  "B1"
@@ -2018,7 +2018,7 @@
     {
         "engWord":  "fever",
         "trWord":  "ateş",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1FA7A.png",
+        "picturePath":  "assets/word-images/fever.png",
         "samplesText":  "The child has a fever.",
         "category":  "Sağlık ve Vücut",
         "cefrLevel":  "B1"
@@ -2026,7 +2026,7 @@
     {
         "engWord":  "cough",
         "trWord":  "öksürük",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1FA7A.png",
+        "picturePath":  "assets/word-images/cough.png",
         "samplesText":  "A cough can last for days.",
         "category":  "Sağlık ve Vücut",
         "cefrLevel":  "B1"
@@ -2034,7 +2034,7 @@
     {
         "engWord":  "pain",
         "trWord":  "ağrı",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1FA7A.png",
+        "picturePath":  "assets/word-images/pain.png",
         "samplesText":  "The pain disappeared slowly.",
         "category":  "Sağlık ve Vücut",
         "cefrLevel":  "B1"
@@ -2042,7 +2042,7 @@
     {
         "engWord":  "wound",
         "trWord":  "yara",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1FA7A.png",
+        "picturePath":  "assets/word-images/wound.png",
         "samplesText":  "Clean the wound carefully.",
         "category":  "Sağlık ve Vücut",
         "cefrLevel":  "B1"
@@ -2050,7 +2050,7 @@
     {
         "engWord":  "exercise",
         "trWord":  "egzersiz",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1FA7A.png",
+        "picturePath":  "assets/word-images/exercises.png",
         "samplesText":  "Exercise helps your body stay strong.",
         "category":  "Sağlık ve Vücut",
         "cefrLevel":  "B1"
@@ -2058,7 +2058,7 @@
     {
         "engWord":  "appointment",
         "trWord":  "randevu",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F4AC.png",
+        "picturePath":  "assets/word-images/medical-appointment.png",
         "samplesText":  "I have an appointment at noon.",
         "category":  "Günlük Yaşam",
         "cefrLevel":  "A2"
@@ -2066,7 +2066,7 @@
     {
         "engWord":  "conversation",
         "trWord":  "konuşma",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F4AC.png",
+        "picturePath":  "assets/word-images/meeting.png",
         "samplesText":  "Their conversation was short.",
         "category":  "Günlük Yaşam",
         "cefrLevel":  "A2"
@@ -2074,7 +2074,7 @@
     {
         "engWord":  "decision",
         "trWord":  "karar",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F4AC.png",
+        "picturePath":  "assets/word-images/decision.png",
         "samplesText":  "This decision is important.",
         "category":  "Günlük Yaşam",
         "cefrLevel":  "A2"
@@ -2082,7 +2082,7 @@
     {
         "engWord":  "habit",
         "trWord":  "alışkanlık",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F4AC.png",
+        "picturePath":  "assets/word-images/habit.png",
         "samplesText":  "Reading is a useful habit.",
         "category":  "Günlük Yaşam",
         "cefrLevel":  "A2"
@@ -2090,7 +2090,7 @@
     {
         "engWord":  "schedule",
         "trWord":  "program",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F4AC.png",
+        "picturePath":  "assets/word-images/schedule.png",
         "samplesText":  "My schedule is full today.",
         "category":  "Günlük Yaşam",
         "cefrLevel":  "A2"
@@ -2098,7 +2098,7 @@
     {
         "engWord":  "message",
         "trWord":  "mesaj",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F4AC.png",
+        "picturePath":  "assets/word-images/message.png",
         "samplesText":  "She sent a message.",
         "category":  "Günlük Yaşam",
         "cefrLevel":  "A2"
@@ -2106,7 +2106,7 @@
     {
         "engWord":  "neighbor",
         "trWord":  "komşu",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F4AC.png",
+        "picturePath":  "assets/word-images/neighbor.png",
         "samplesText":  "Our neighbor is friendly.",
         "category":  "Günlük Yaşam",
         "cefrLevel":  "A2"
@@ -2114,7 +2114,7 @@
     {
         "engWord":  "receipt",
         "trWord":  "fiş",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F4AC.png",
+        "picturePath":  "assets/word-images/receipt.png",
         "samplesText":  "Keep the receipt after shopping.",
         "category":  "Günlük Yaşam",
         "cefrLevel":  "A2"
@@ -2122,7 +2122,7 @@
     {
         "engWord":  "wallet",
         "trWord":  "cüzdan",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F4AC.png",
+        "picturePath":  "assets/word-images/wallet.png",
         "samplesText":  "My wallet is in my bag.",
         "category":  "Günlük Yaşam",
         "cefrLevel":  "A2"
@@ -2130,7 +2130,7 @@
     {
         "engWord":  "umbrella",
         "trWord":  "şemsiye",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F4AC.png",
+        "picturePath":  "assets/word-images/umbrella.png",
         "samplesText":  "Take an umbrella because it may rain.",
         "category":  "Günlük Yaşam",
         "cefrLevel":  "A2"
@@ -2138,7 +2138,7 @@
     {
         "engWord":  "calendar",
         "trWord":  "takvim",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F4AC.png",
+        "picturePath":  "assets/word-images/calendar.png",
         "samplesText":  "The calendar is on the wall.",
         "category":  "Günlük Yaşam",
         "cefrLevel":  "A2"
@@ -2146,7 +2146,7 @@
     {
         "engWord":  "meeting",
         "trWord":  "toplantı",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F4AC.png",
+        "picturePath":  "assets/word-images/meeting.png",
         "samplesText":  "The meeting starts soon.",
         "category":  "Günlük Yaşam",
         "cefrLevel":  "A2"
@@ -2154,7 +2154,7 @@
     {
         "engWord":  "problem",
         "trWord":  "problem",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F4AC.png",
+        "picturePath":  "assets/word-images/problem.png",
         "samplesText":  "We solved the problem together.",
         "category":  "Günlük Yaşam",
         "cefrLevel":  "A2"
@@ -2162,7 +2162,7 @@
     {
         "engWord":  "solution",
         "trWord":  "çözüm",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F4AC.png",
+        "picturePath":  "assets/word-images/solutions.png",
         "samplesText":  "The solution was simple.",
         "category":  "Günlük Yaşam",
         "cefrLevel":  "A2"
@@ -2170,7 +2170,7 @@
     {
         "engWord":  "opinion",
         "trWord":  "fikir",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F4AC.png",
+        "picturePath":  "assets/word-images/opinion.png",
         "samplesText":  "Everyone has a different opinion.",
         "category":  "Günlük Yaşam",
         "cefrLevel":  "A2"
@@ -2178,7 +2178,7 @@
     {
         "engWord":  "leopard",
         "trWord":  "leopar",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F43E.png",
+        "picturePath":  "assets/word-images/mammal.png",
         "samplesText":  "The leopard climbs a tree easily.",
         "category":  "Hayvanlar",
         "cefrLevel":  "A1"
@@ -2186,7 +2186,7 @@
     {
         "engWord":  "nurse",
         "trWord":  "hemşire",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F4BC.png",
+        "picturePath":  "assets/word-images/nurse.png",
         "samplesText":  "The nurse checked the patient.",
         "category":  "Meslekler",
         "cefrLevel":  "A2"
@@ -2194,7 +2194,7 @@
     {
         "engWord":  "manager",
         "trWord":  "yönetici",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F4BC.png",
+        "picturePath":  "assets/word-images/manager.png",
         "samplesText":  "The manager planned the work.",
         "category":  "Meslekler",
         "cefrLevel":  "A2"
@@ -2202,7 +2202,7 @@
     {
         "engWord":  "developer",
         "trWord":  "geliştirici",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F4BC.png",
+        "picturePath":  "assets/word-images/develoop.png",
         "samplesText":  "The developer fixed the application.",
         "category":  "Meslekler",
         "cefrLevel":  "A2"
@@ -2210,7 +2210,7 @@
     {
         "engWord":  "archery",
         "trWord":  "okçuluk",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/26BD.png",
+        "picturePath":  "assets/word-images/archery.png",
         "samplesText":  "Archery requires focus.",
         "category":  "Sporlar",
         "cefrLevel":  "B1"
@@ -2218,7 +2218,7 @@
     {
         "engWord":  "sailing",
         "trWord":  "yelken",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/26BD.png",
+        "picturePath":  "assets/word-images/sailing-boat.png",
         "samplesText":  "Sailing depends on the wind.",
         "category":  "Sporlar",
         "cefrLevel":  "B1"
@@ -2226,7 +2226,7 @@
     {
         "engWord":  "judo",
         "trWord":  "judo",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/26BD.png",
+        "picturePath":  "assets/word-images/judo.png",
         "samplesText":  "Judo teaches balance and control.",
         "category":  "Sporlar",
         "cefrLevel":  "B1"
@@ -2234,7 +2234,7 @@
     {
         "engWord":  "karate",
         "trWord":  "karate",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/26BD.png",
+        "picturePath":  "assets/word-images/karate.png",
         "samplesText":  "Karate needs discipline.",
         "category":  "Sporlar",
         "cefrLevel":  "B1"
@@ -2242,7 +2242,7 @@
     {
         "engWord":  "diving",
         "trWord":  "dalış",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/26BD.png",
+        "picturePath":  "assets/word-images/scuba.png",
         "samplesText":  "Diving lets you see underwater life.",
         "category":  "Sporlar",
         "cefrLevel":  "B1"
@@ -2250,7 +2250,7 @@
     {
         "engWord":  "surfing",
         "trWord":  "sörf",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/26BD.png",
+        "picturePath":  "assets/word-images/surfing.png",
         "samplesText":  "Surfing is done on waves.",
         "category":  "Sporlar",
         "cefrLevel":  "B1"
@@ -2258,7 +2258,7 @@
     {
         "engWord":  "badminton",
         "trWord":  "badminton",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/26BD.png",
+        "picturePath":  "assets/word-images/badminton.png",
         "samplesText":  "Badminton is played with a shuttlecock.",
         "category":  "Sporlar",
         "cefrLevel":  "B1"
@@ -2266,7 +2266,7 @@
     {
         "engWord":  "mushroom",
         "trWord":  "mantar",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F37D.png",
+        "picturePath":  "assets/word-images/mushroom.png",
         "samplesText":  "Mushroom soup is delicious.",
         "category":  "Yiyecekler",
         "cefrLevel":  "A1"
@@ -2274,7 +2274,7 @@
     {
         "engWord":  "carrot",
         "trWord":  "havuç",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F37D.png",
+        "picturePath":  "assets/word-images/carrot.png",
         "samplesText":  "A carrot is orange and crunchy.",
         "category":  "Yiyecekler",
         "cefrLevel":  "A1"
@@ -2282,7 +2282,7 @@
     {
         "engWord":  "potato",
         "trWord":  "patates",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F37D.png",
+        "picturePath":  "assets/word-images/potato.png",
         "samplesText":  "Potato can be fried or boiled.",
         "category":  "Yiyecekler",
         "cefrLevel":  "A1"
@@ -2290,7 +2290,7 @@
     {
         "engWord":  "tomato",
         "trWord":  "domates",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F37D.png",
+        "picturePath":  "assets/word-images/tomato.png",
         "samplesText":  "The tomato is red and fresh.",
         "category":  "Yiyecekler",
         "cefrLevel":  "A1"
@@ -2298,7 +2298,7 @@
     {
         "engWord":  "cucumber",
         "trWord":  "salatalık",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F37D.png",
+        "picturePath":  "assets/word-images/cucumber.png",
         "samplesText":  "Cucumber is used in salads.",
         "category":  "Yiyecekler",
         "cefrLevel":  "A1"
@@ -2306,7 +2306,7 @@
     {
         "engWord":  "essay",
         "trWord":  "kompozisyon",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F393.png",
+        "picturePath":  "assets/word-images/essay.png",
         "samplesText":  "The essay has three paragraphs.",
         "category":  "Okul",
         "cefrLevel":  "A1"
@@ -2314,7 +2314,7 @@
     {
         "engWord":  "quiz",
         "trWord":  "kısa sınav",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F393.png",
+        "picturePath":  "assets/word-images/quiz.png",
         "samplesText":  "The quiz has ten questions.",
         "category":  "Okul",
         "cefrLevel":  "A1"
@@ -2322,7 +2322,7 @@
     {
         "engWord":  "grade",
         "trWord":  "not",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F393.png",
+        "picturePath":  "assets/word-images/grade.png",
         "samplesText":  "Her grade improved this term.",
         "category":  "Okul",
         "cefrLevel":  "A1"
@@ -2330,7 +2330,7 @@
     {
         "engWord":  "campus",
         "trWord":  "kampüs",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F393.png",
+        "picturePath":  "assets/word-images/campus.png",
         "samplesText":  "The campus is large.",
         "category":  "Okul",
         "cefrLevel":  "A1"
@@ -2338,7 +2338,7 @@
     {
         "engWord":  "crossroad",
         "trWord":  "kavşak",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F697.png",
+        "picturePath":  "assets/word-images/crossroad.png",
         "samplesText":  "The crossroad is busy.",
         "category":  "Ulaşım",
         "cefrLevel":  "A2"
@@ -2346,7 +2346,7 @@
     {
         "engWord":  "platform",
         "trWord":  "peron",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F697.png",
+        "picturePath":  "assets/word-images/train-station.png",
         "samplesText":  "The train arrives at platform two.",
         "category":  "Ulaşım",
         "cefrLevel":  "A2"
@@ -2354,7 +2354,7 @@
     {
         "engWord":  "highway",
         "trWord":  "otoyol",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F697.png",
+        "picturePath":  "assets/word-images/highway.png",
         "samplesText":  "The highway is very long.",
         "category":  "Ulaşım",
         "cefrLevel":  "A2"
@@ -2362,7 +2362,7 @@
     {
         "engWord":  "bridge",
         "trWord":  "köprü",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1F697.png",
+        "picturePath":  "assets/word-images/bridge.png",
         "samplesText":  "The bridge connects two towns.",
         "category":  "Ulaşım",
         "cefrLevel":  "A2"
@@ -2370,7 +2370,7 @@
     {
         "engWord":  "muscle",
         "trWord":  "kas",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1FA7A.png",
+        "picturePath":  "assets/word-images/muscle.png",
         "samplesText":  "Exercise builds muscle.",
         "category":  "Sağlık ve Vücut",
         "cefrLevel":  "B1"
@@ -2378,7 +2378,7 @@
     {
         "engWord":  "bone",
         "trWord":  "kemik",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1FA7A.png",
+        "picturePath":  "assets/word-images/bone.png",
         "samplesText":  "A bone can break in an accident.",
         "category":  "Sağlık ve Vücut",
         "cefrLevel":  "B1"
@@ -2386,17 +2386,9 @@
     {
         "engWord":  "skin",
         "trWord":  "cilt",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/1FA7A.png",
+        "picturePath":  "assets/word-images/skin.png",
         "samplesText":  "Skin protects the body.",
         "category":  "Sağlık ve Vücut",
-        "cefrLevel":  "B1"
-    },
-    {
-        "engWord":  "pickleball",
-        "trWord":  "pickleball",
-        "picturePath":  "https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji/color/72x72/26BD.png",
-        "samplesText":  "Pickleball is a fast and popular racket sport.",
-        "category":  "Sporlar",
         "cefrLevel":  "B1"
     }
 ]

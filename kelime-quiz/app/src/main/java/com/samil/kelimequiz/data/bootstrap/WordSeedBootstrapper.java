@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 
 import com.samil.kelimequiz.data.repository.WordRepository;
 import com.samil.kelimequiz.domain.model.WordLevel;
+import com.samil.kelimequiz.util.ImageStorage;
 
 import org.json.JSONException;
 import org.json.JSONArray;
@@ -19,7 +20,7 @@ import java.util.Scanner;
 public class WordSeedBootstrapper {
     private static final String PREF_NAME = "word_seed_bootstrap";
     private static final String KEY_SEED_VERSION_PREFIX = "seed_version_";
-    private static final int CURRENT_SEED_VERSION = 1;
+    private static final int CURRENT_SEED_VERSION = 4;
 
     private final Context context;
     private final WordRepository wordRepository;
@@ -34,20 +35,20 @@ public class WordSeedBootstrapper {
             return 0;
         }
 
+        ImageStorage.clearSeedImageCache(context);
         int importedCount = 0;
         for (SeedWord seedWord : loadSeedWords()) {
-            boolean inserted = wordRepository.addWord(
+            String resolvedPicturePath = resolvePicturePath(seedWord.picturePath);
+            wordRepository.syncSeedWord(
                     userId,
                     seedWord.engWord,
                     seedWord.trWord,
-                    seedWord.picturePath,
+                    resolvedPicturePath,
                     seedWord.samplesText,
                     seedWord.category,
                     seedWord.cefrLevel
             );
-            if (inserted) {
-                importedCount++;
-            }
+            importedCount++;
         }
         markSeedImported(userId);
         return importedCount;
@@ -77,6 +78,11 @@ public class WordSeedBootstrapper {
         } catch (IOException | JSONException e) {
             throw new IllegalStateException("Hazir kelime havuzu yuklenemedi.", e);
         }
+    }
+
+    private String resolvePicturePath(String picturePath) {
+        String copiedPath = ImageStorage.copySeedAssetToAppStorage(context, picturePath);
+        return copiedPath != null ? copiedPath : picturePath;
     }
 
     private List<SeedWord> parseSeedWords(String json) throws JSONException {

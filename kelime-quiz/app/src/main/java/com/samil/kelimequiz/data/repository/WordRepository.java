@@ -46,6 +46,23 @@ public class WordRepository {
         return true;
     }
 
+    public void syncSeedWord(int userId, String engWord, String trWord, String picturePath, String samplesText, String category, String cefrLevel) {
+        String cleanEngWord = requireText(engWord, "İngilizce kelime boş bırakılamaz.");
+        String cleanTrWord = requireText(trWord, "Türkçe karşılık boş bırakılamaz.");
+
+        WordEntity word = wordDao.findByUserAndEnglishWord(userId, cleanEngWord);
+        if (word == null) {
+            addWord(userId, cleanEngWord, cleanTrWord, picturePath, samplesText, category, cefrLevel);
+            return;
+        }
+
+        word.trWord = cleanTrWord;
+        word.picturePath = trimToNull(picturePath);
+        word.category = trimToNull(category);
+        word.cefrLevel = WordLevel.normalize(cefrLevel);
+        wordDao.update(word);
+    }
+
     public List<WordWithLevel> listWords(int userId) {
         return wordDao.listByUser(userId);
     }
