@@ -12,6 +12,7 @@ import com.google.android.material.button.MaterialButton;
 import com.google.android.material.card.MaterialCardView;
 import com.samil.kelimequiz.R;
 import com.samil.kelimequiz.data.local.AppDatabase;
+import com.samil.kelimequiz.data.local.entity.ActivityLogEntity;
 import com.samil.kelimequiz.data.local.entity.WordEntity;
 import com.samil.kelimequiz.data.remote.LlmApiClient;
 import com.samil.kelimequiz.util.AppExecutors;
@@ -112,6 +113,7 @@ public class WordChainActivity extends AppCompatActivity {
                     ivStoryImage.setVisibility(View.VISIBLE);
                     tvImageStatus.setVisibility(View.GONE);
                 });
+                logStoryActivity();
             } catch (IOException e) {
                 runOnUiThread(() -> {
                     if (tvStoryText.getText().toString().equals(getString(R.string.word_chain_story_loading))) {
@@ -127,6 +129,16 @@ public class WordChainActivity extends AppCompatActivity {
                     btnGenerate.setText(R.string.word_chain_generate);
                 });
             }
+        });
+    }
+
+    private void logStoryActivity() {
+        AppExecutors.io().execute(() -> {
+            ActivityLogEntity log = new ActivityLogEntity();
+            log.userId = userId;
+            log.type = ActivityLogEntity.TYPE_AI_STORY;
+            log.createdAt = System.currentTimeMillis();
+            AppDatabase.getInstance(this).activityLogDao().insert(log);
         });
     }
 }

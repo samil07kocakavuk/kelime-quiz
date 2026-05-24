@@ -5,6 +5,7 @@ import android.content.Context;
 import com.samil.kelimequiz.data.bootstrap.WordSeedBootstrapper;
 import com.samil.kelimequiz.data.local.AppDatabase;
 import com.samil.kelimequiz.data.repository.AuthRepository;
+import com.samil.kelimequiz.data.repository.ActivityReportRepository;
 import com.samil.kelimequiz.data.repository.QuizRepository;
 import com.samil.kelimequiz.data.repository.WordRepository;
 import com.samil.kelimequiz.util.security.PasswordHasher;
@@ -15,13 +16,15 @@ public class AppContainer {
     public final AuthRepository authRepository;
     public final WordRepository wordRepository;
     public final QuizRepository quizRepository;
+    public final ActivityReportRepository activityReportRepository;
     public final WordSeedBootstrapper wordSeedBootstrapper;
 
     private AppContainer(Context context) {
         AppDatabase database = AppDatabase.getInstance(context);
         authRepository = new AuthRepository(database.userDao(), new PasswordHasher());
         wordRepository = new WordRepository(database.wordDao(), database.wordSampleDao());
-        quizRepository = new QuizRepository(database.wordDao(), database.quizProgressDao(), database.quizResultDao());
+        quizRepository = new QuizRepository(database.wordDao(), database.quizProgressDao(), database.quizResultDao(), database.activityLogDao());
+        activityReportRepository = new ActivityReportRepository(database.quizResultDao(), database.quizProgressDao(), database.activityLogDao());
         wordSeedBootstrapper = new WordSeedBootstrapper(context, wordRepository);
     }
 

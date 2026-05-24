@@ -55,4 +55,14 @@
     <!-- Legacy / Compatibility -->
     <color name="purple_700">#244B56</color>
     <color name="teal_200">#387E4F</color>
+
+    <!-- Report Chart Palette -->
+    <color name="report_chart_1">#1B434D</color>
+    <color name="report_chart_2">#C85B4F</color>
+    <color name="report_chart_3">#387E4F</color>
+    <color name="report_chart_4">#D18B2D</color>
+    <color name="report_chart_5">#6A5ACD</color>
+    <color name="report_chart_6">#2F8F9D</color>
+    <color name="report_chart_7">#B04E7A</color>
+    <color name="report_chart_8">#7C6A3C</color>
 </resources>

@@ -56,4 +56,7 @@ public interface QuizProgressDao {
 
     @Query("SELECT COUNT(*) FROM quiz_progress WHERE userId = :userId AND level = 1")
     int countLevelOneWords(int userId);
+
+    @Query("SELECT COUNT(*) FROM quiz_progress WHERE userId = :userId AND firstLevelOneAt > 0")
+    int countFirstLevelOneWords(int userId);
 }

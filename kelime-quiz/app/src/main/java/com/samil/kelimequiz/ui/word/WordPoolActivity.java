@@ -20,7 +20,6 @@ import com.samil.kelimequiz.data.local.entity.WordEntity;
 import com.samil.kelimequiz.data.local.entity.WordWithLevel;
 import com.samil.kelimequiz.domain.model.WordDetails;
 import com.samil.kelimequiz.domain.model.WordCategories;
-import com.samil.kelimequiz.domain.service.WordReportHtmlBuilder;
 import com.samil.kelimequiz.ui.auth.LoginActivity;
 import com.samil.kelimequiz.ui.main.WordCardAdapter;
 import com.samil.kelimequiz.ui.profile.ProfileActivity;
@@ -46,7 +45,6 @@ public class WordPoolActivity extends AppCompatActivity implements WordCardAdapt
     private Spinner spSortOrder;
     private SessionManager sessionManager;
     private List<WordWithLevel> allWords = new ArrayList<>();
-    private final WordReportHtmlBuilder reportHtmlBuilder = new WordReportHtmlBuilder();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,7 +69,6 @@ public class WordPoolActivity extends AppCompatActivity implements WordCardAdapt
         setupCategorySpinner();
         setupSortSpinner();
 
-        findViewById(R.id.btnPrintReport).setOnClickListener(v -> printReport());
     }
 
     private void setupCategorySpinner() {
@@ -197,11 +194,5 @@ public class WordPoolActivity extends AppCompatActivity implements WordCardAdapt
     private void openLoginAndClose() {
         startActivity(new Intent(this, LoginActivity.class));
         finish();
-    }
-
-    private void printReport() {
-        if (allWords == null || allWords.isEmpty()) return;
-        String html = reportHtmlBuilder.build(allWords);
-        new WordReportPrinter(this).print(html);
     }
 }

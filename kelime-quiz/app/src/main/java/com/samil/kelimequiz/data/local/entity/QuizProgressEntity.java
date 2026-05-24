@@ -37,4 +37,5 @@ public class QuizProgressEntity {
     public long nextReviewAt;
     public boolean learned;
     public long updatedAt;
+    public long firstLevelOneAt;
 }

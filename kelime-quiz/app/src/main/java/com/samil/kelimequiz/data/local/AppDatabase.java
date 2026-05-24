@@ -8,11 +8,13 @@ import androidx.room.RoomDatabase;
 import androidx.room.migration.Migration;
 import androidx.sqlite.db.SupportSQLiteDatabase;
 
+import com.samil.kelimequiz.data.local.dao.ActivityLogDao;
 import com.samil.kelimequiz.data.local.dao.QuizProgressDao;
 import com.samil.kelimequiz.data.local.dao.QuizResultDao;
 import com.samil.kelimequiz.data.local.dao.UserDao;
 import com.samil.kelimequiz.data.local.dao.WordDao;
 import com.samil.kelimequiz.data.local.dao.WordSampleDao;
+import com.samil.kelimequiz.data.local.entity.ActivityLogEntity;
 import com.samil.kelimequiz.data.local.entity.QuizProgressEntity;
 import com.samil.kelimequiz.data.local.entity.QuizResultEntity;
 import com.samil.kelimequiz.data.local.entity.UserEntity;
@@ -20,8 +22,8 @@ import com.samil.kelimequiz.data.local.entity.WordEntity;
 import com.samil.kelimequiz.data.local.entity.WordSampleEntity;
 
 @Database(
-        entities = {UserEntity.class, WordEntity.class, WordSampleEntity.class, QuizProgressEntity.class, QuizResultEntity.class},
-        version = 10,
+        entities = {UserEntity.class, WordEntity.class, WordSampleEntity.class, QuizProgressEntity.class, QuizResultEntity.class, ActivityLogEntity.class},
+        version = 11,
         exportSchema = false
 )
 public abstract class AppDatabase extends RoomDatabase {
@@ -141,6 +143,25 @@ public abstract class AppDatabase extends RoomDatabase {
         }
     };
 
+    public static final Migration MIGRATION_10_11 = new Migration(10, 11) {
+        @Override
+        public void migrate(SupportSQLiteDatabase database) {
+            database.execSQL("ALTER TABLE `quiz_progress` ADD COLUMN `firstLevelOneAt` INTEGER NOT NULL DEFAULT 0");
+            database.execSQL(
+                    "CREATE TABLE IF NOT EXISTS `activity_logs` (" +
+                            "`activityLogId` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, " +
+                            "`userId` INTEGER NOT NULL, " +
+                            "`type` TEXT, " +
+                            "`createdAt` INTEGER NOT NULL, " +
+                            "FOREIGN KEY(`userId`) REFERENCES `users`(`userId`) ON UPDATE NO ACTION ON DELETE CASCADE" +
+                            ")"
+            );
+            database.execSQL("CREATE INDEX IF NOT EXISTS `index_activity_logs_userId` ON `activity_logs` (`userId`)");
+            database.execSQL("CREATE INDEX IF NOT EXISTS `index_activity_logs_type` ON `activity_logs` (`type`)");
+            database.execSQL("CREATE INDEX IF NOT EXISTS `index_activity_logs_createdAt` ON `activity_logs` (`createdAt`)");
+        }
+    };
+
     public abstract UserDao userDao();
 
     public abstract WordDao wordDao();
@@ -150,6 +171,8 @@ public abstract class AppDatabase extends RoomDatabase {
     public abstract QuizProgressDao quizProgressDao();
 
     public abstract QuizResultDao quizResultDao();
+
+    public abstract ActivityLogDao activityLogDao();
 
     public static AppDatabase getInstance(Context context) {
         Context appContext = context.getApplicationContext();
@@ -170,8 +193,10 @@ public abstract class AppDatabase extends RoomDatabase {
                                     MIGRATION_6_7,
                                     MIGRATION_7_8,
                                     MIGRATION_8_9,
-                                    MIGRATION_9_10
+                                    MIGRATION_9_10,
+                                    MIGRATION_10_11
                             )
+                            .fallbackToDestructiveMigration()
                             .build();
                 }
             }

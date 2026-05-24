@@ -3,6 +3,7 @@ package com.samil.kelimequiz.data.repository;
 import com.samil.kelimequiz.data.local.dao.QuizProgressDao;
 import com.samil.kelimequiz.data.local.dao.QuizResultDao;
 import com.samil.kelimequiz.data.local.dao.WordDao;
+import com.samil.kelimequiz.data.local.entity.ActivityLogEntity;
 import com.samil.kelimequiz.data.local.entity.QuizProgressEntity;
 import com.samil.kelimequiz.data.local.entity.QuizResultEntity;
 import com.samil.kelimequiz.data.local.entity.WordEntity;
@@ -29,12 +30,17 @@ public class QuizRepository {
     private final WordDao wordDao;
     private final QuizProgressDao quizProgressDao;
     private final QuizResultDao quizResultDao;
+    private final com.samil.kelimequiz.data.local.dao.ActivityLogDao activityLogDao;
     private final SrsScheduler srsScheduler;
 
-    public QuizRepository(WordDao wordDao, QuizProgressDao quizProgressDao, QuizResultDao quizResultDao) {
+    public QuizRepository(WordDao wordDao,
+                          QuizProgressDao quizProgressDao,
+                          QuizResultDao quizResultDao,
+                          com.samil.kelimequiz.data.local.dao.ActivityLogDao activityLogDao) {
         this.wordDao = wordDao;
         this.quizProgressDao = quizProgressDao;
         this.quizResultDao = quizResultDao;
+        this.activityLogDao = activityLogDao;
         this.srsScheduler = new SrsScheduler();
     }
 
@@ -92,6 +98,12 @@ public class QuizRepository {
         result.successRate = total > 0 ? (correct * 100.0) / total : 0;
         result.completedAt = System.currentTimeMillis();
         quizResultDao.insert(result);
+
+        ActivityLogEntity log = new ActivityLogEntity();
+        log.userId = userId;
+        log.type = ActivityLogEntity.TYPE_QUIZ_COMPLETED;
+        log.createdAt = result.completedAt;
+        activityLogDao.insert(log);
     }
 
     public double getAverageSuccessRate(int userId) {
@@ -190,6 +202,14 @@ public class QuizRepository {
             progress.level = Math.min(progress.level + 1, SrsScheduler.MAX_LEVEL);
             progress.learned = srsScheduler.isLearned(progress.level);
             progress.nextReviewAt = progress.learned ? 0 : srsScheduler.calculateNextReviewAt(progress.level, now);
+            if (progress.level == 1 && progress.firstLevelOneAt == 0) {
+                progress.firstLevelOneAt = now;
+                ActivityLogEntity log = new ActivityLogEntity();
+                log.userId = progress.userId;
+                log.type = ActivityLogEntity.TYPE_NEW_LEVEL_ONE;
+                log.createdAt = now;
+                activityLogDao.insert(log);
+            }
         } else {
             progress.level = 0;
             progress.learned = false;
@@ -211,6 +231,7 @@ public class QuizRepository {
         newProgress.nextReviewAt = 0;
         newProgress.learned = false;
         newProgress.updatedAt = System.currentTimeMillis();
+        newProgress.firstLevelOneAt = 0;
         return newProgress;
     }
 

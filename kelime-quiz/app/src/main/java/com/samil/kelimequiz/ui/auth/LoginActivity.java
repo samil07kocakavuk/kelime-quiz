@@ -33,7 +33,6 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        AppContainer.from(this);
         sessionManager = new SessionManager(this);
         if (sessionManager.isLoggedIn()) {
             openMainAndClose();

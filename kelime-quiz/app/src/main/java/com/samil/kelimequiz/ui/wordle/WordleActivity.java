@@ -18,6 +18,7 @@ import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.button.MaterialButton;
 import com.samil.kelimequiz.R;
 import com.samil.kelimequiz.data.local.AppDatabase;
+import com.samil.kelimequiz.data.local.entity.ActivityLogEntity;
 import com.samil.kelimequiz.util.AppExecutors;
 import com.samil.kelimequiz.util.NavigationHelper;
 import com.samil.kelimequiz.util.SessionManager;
@@ -537,8 +538,30 @@ public class WordleActivity extends AppCompatActivity {
         gameOver = true;
         setKeyboardEnabled(false);
         markDateCompleted(selectedDate, won);
+        logWordleActivity(won);
         showResult(won);
         buildCalendar();
+    }
+
+    private void logWordleActivity(boolean won) {
+        AppExecutors.io().execute(() -> {
+            AppDatabase db = AppDatabase.getInstance(this);
+            long now = System.currentTimeMillis();
+
+            ActivityLogEntity completed = new ActivityLogEntity();
+            completed.userId = userId;
+            completed.type = ActivityLogEntity.TYPE_WORDLE_COMPLETED;
+            completed.createdAt = now;
+            db.activityLogDao().insert(completed);
+
+            if (won) {
+                ActivityLogEntity win = new ActivityLogEntity();
+                win.userId = userId;
+                win.type = ActivityLogEntity.TYPE_WORDLE_WON;
+                win.createdAt = now;
+                db.activityLogDao().insert(win);
+            }
+        });
     }
 
     private void showResult(boolean won) {

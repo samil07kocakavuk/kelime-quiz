@@ -111,7 +111,6 @@
     <string name="category_hint">Kategori</string>
     <string name="category_label">Kategori:</string>
     <string name="sort_label">Sıralama:</string>
-    <string name="print_report_action">Raporu Yazdır / PDF</string>
     <string name="level_format_label">%1$d. Seviye/%2$d</string>
     <string name="level_default_label">0/6. Seviye</string>
     <string name="word_meta_format">%1$s · %2$s</string>
@@ -183,4 +182,55 @@
     <string name="word_chain_no_words">Kelime havuzunda en az 5 kelime gerekli.</string>
     <string name="word_chain_image_content_description">LLM tarafından oluşturulan hikaye görseli</string>
     <string name="day_count_format">%1$d Gün</string>
+    <string name="profile_report_card_title">Raporuna Git</string>
+    <string name="profile_report_card_desc">Günlük, haftalık ve aylık aktiviteni detaylı şekilde incele.</string>
+    <string name="profile_report_card_action">Raporu Aç</string>
+
+    <string name="report_screen_title">Aktivite Raporu</string>
+    <string name="report_daily_title">Günlük Aktivite</string>
+    <string name="report_daily_subtitle">Bugün kaydedilen quiz, Wordle, hikaye ve kelime ilerlemeleri.</string>
+    <string name="report_tab_daily">Günlük</string>
+    <string name="report_tab_weekly">Haftalık</string>
+    <string name="report_tab_monthly">Aylık</string>
+    <string name="report_tab_total">Toplam</string>
+    <string name="report_daily_section_title">Bugünkü özet</string>
+    <string name="report_weekly_section_title">Bu haftanın dağılımı</string>
+    <string name="report_monthly_section_title">Bu ayın dağılımı</string>
+    <string name="report_total_section_title">Toplam özet</string>
+    <string name="report_loading">Veriler yükleniyor…</string>
+    <string name="report_no_data">Seçili dönemde henüz kayıt bulunmuyor.</string>
+    <string name="report_empty_bucket">Bu bölümde henüz kayıt yok.</string>
+
+    <string name="report_metric_quiz_questions">Çözülen Quiz Sorusu</string>
+    <string name="report_metric_quiz_correct">Doğru Cevap</string>
+    <string name="report_metric_quiz_wrong">Yanlış Cevap</string>
+    <string name="report_metric_new_level_one">Yeni 1. Seviye Kelime</string>
+    <string name="report_metric_wordle_completed">Tamamlanan Wordle</string>
+    <string name="report_metric_wordle_won">Kazanılan Wordle</string>
+    <string name="report_metric_ai_story">AI Hikaye</string>
+    <string name="report_metric_total_activity">Toplam Aktivite</string>
+
+    <string name="report_metric_sub_quiz">Quiz oturumu içinde toplam soru sayısı</string>
+    <string name="report_metric_sub_correct">Doğru cevaplar</string>
+    <string name="report_metric_sub_wrong">Yanlış cevaplar</string>
+    <string name="report_metric_sub_new_level_one">İlk kez 1. seviyeye ulaşan kelimeler</string>
+    <string name="report_metric_sub_wordle">Tamamlanan günlük Wordle oyunları</string>
+    <string name="report_metric_sub_wordle_won">Kazanılan Wordle oyunları</string>
+    <string name="report_metric_sub_ai_story">Oluşturulan AI hikayeleri</string>
+    <string name="report_metric_sub_total">Seçili dönemin toplam etkinlik sayısı</string>
+
+    <string name="report_daily_note_format">Bugün %1$d quiz sorusu çözdün, %2$d doğru ve %3$d yanlış yaptın.</string>
+    <string name="report_weekly_note_format">Bu hafta %1$d aktivite kaydedildi. Günlere göre dağılım aşağıda.</string>
+    <string name="report_monthly_note_format">Bu ay %1$d aktivite kaydedildi. Haftalara göre dağılım aşağıda.</string>
+    <string name="report_total_note_format">Toplamda %1$d aktivite, %2$d Wordle ve %3$d AI hikaye oluşturuldu.</string>
+    <string name="report_weekly_insight_format">Bu hafta %1$d gün aktif oldun, toplam %2$d aktivite yaptın.</string>
+    <string name="report_monthly_insight_format">Bu ay %1$d hafta aktif oldun, toplam %2$d aktivite yaptın.</string>
+    <string name="report_chart_center_activity">toplam aktivite</string>
+    <string name="report_chart_empty">Grafik için yeterli veri yok.</string>
+    <string name="report_chart_legend_title">Dağılım</string>
+    <string name="report_chart_legend_empty">Legend için veri yok.</string>
+    <string name="report_chart_summary_weekly">Bu hafta en yoğun gün %1$s oldu.</string>
+    <string name="report_chart_summary_monthly">Bu ay en yoğun hafta %1$s oldu.</string>
+    <string name="report_print_action">Raporu Yazdır / PDF</string>
+    <string name="report_print_hint">Bu özet, seçili dönemi PDF ya da yazıcıya aktarmak için kullanılır.</string>
 </resources>
