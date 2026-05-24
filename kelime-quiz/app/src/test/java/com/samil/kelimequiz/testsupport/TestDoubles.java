@@ -4,7 +4,9 @@ import com.samil.kelimequiz.data.local.dao.QuizProgressDao;
 import com.samil.kelimequiz.data.local.dao.UserDao;
 import com.samil.kelimequiz.data.local.dao.WordDao;
 import com.samil.kelimequiz.data.local.dao.WordSampleDao;
+import com.samil.kelimequiz.data.local.dao.ActivityLogDao;
 import com.samil.kelimequiz.data.local.dao.QuizResultDao;
+import com.samil.kelimequiz.data.local.entity.ActivityLogEntity;
 import com.samil.kelimequiz.data.local.entity.QuizProgressEntity;
 import com.samil.kelimequiz.data.local.entity.QuizResultEntity;
 import com.samil.kelimequiz.data.local.entity.UserEntity;
@@ -462,6 +464,17 @@ public final class TestDoubles {
             return count;
         }
 
+        @Override
+        public int countFirstLevelOneWords(int userId) {
+            int count = 0;
+            for (QuizProgressEntity progress : progressByWordId.values()) {
+                if (progress.userId == userId && progress.firstLevelOneAt > 0) {
+                    count++;
+                }
+            }
+            return count;
+        }
+
         private static QuizProgressEntity copy(QuizProgressEntity source) {
             QuizProgressEntity copy = new QuizProgressEntity();
             copy.progressId = source.progressId;
@@ -539,6 +552,55 @@ public final class TestDoubles {
             copy.correctAnswers = source.correctAnswers;
             copy.successRate = source.successRate;
             copy.completedAt = source.completedAt;
+            return copy;
+        }
+    }
+
+    public static final class InMemoryActivityLogDao implements ActivityLogDao {
+        private final List<ActivityLogEntity> logs = new ArrayList<>();
+        private int nextId = 1;
+
+        @Override
+        public long insert(ActivityLogEntity log) {
+            if (log.activityLogId == 0) {
+                log.activityLogId = nextId++;
+            }
+            logs.add(copy(log));
+            return log.activityLogId;
+        }
+
+        @Override
+        public List<ActivityLogEntity> listByUserAndRange(int userId, long startAt, long endAt) {
+            List<ActivityLogEntity> result = new ArrayList<>();
+            for (ActivityLogEntity log : logs) {
+                if (log.userId == userId && log.createdAt >= startAt && log.createdAt < endAt) {
+                    result.add(copy(log));
+                }
+            }
+            return result;
+        }
+
+        @Override
+        public int countByTypeAndRange(int userId, String type, long startAt, long endAt) {
+            int count = 0;
+            for (ActivityLogEntity log : logs) {
+                if (log.userId == userId
+                        && type != null
+                        && type.equals(log.type)
+                        && log.createdAt >= startAt
+                        && log.createdAt < endAt) {
+                    count++;
+                }
+            }
+            return count;
+        }
+
+        private static ActivityLogEntity copy(ActivityLogEntity source) {
+            ActivityLogEntity copy = new ActivityLogEntity();
+            copy.activityLogId = source.activityLogId;
+            copy.userId = source.userId;
+            copy.type = source.type;
+            copy.createdAt = source.createdAt;
             return copy;
         }
     }
