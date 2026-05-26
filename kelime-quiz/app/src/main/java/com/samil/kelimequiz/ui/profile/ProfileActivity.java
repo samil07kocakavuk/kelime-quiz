@@ -11,6 +11,7 @@ import com.samil.kelimequiz.R;
 import com.samil.kelimequiz.data.local.AppDatabase;
 import com.samil.kelimequiz.data.local.entity.UserEntity;
 import com.samil.kelimequiz.ui.auth.LoginActivity;
+import com.samil.kelimequiz.ui.report.WeeklyReportActivity;
 import com.samil.kelimequiz.ui.word.WordPoolActivity;
 import com.samil.kelimequiz.util.AppContainer;
 import com.samil.kelimequiz.util.AppExecutors;
@@ -43,6 +44,7 @@ public class ProfileActivity extends AppCompatActivity {
         tvProfileName = findViewById(R.id.tvProfileName);
         tvProfileInfo = findViewById(R.id.tvProfileInfo);
         MaterialButton btnWordPool = findViewById(R.id.btnWordPool);
+        MaterialButton btnProfileReport = findViewById(R.id.btnProfileReport);
         MaterialButton btnLogout = findViewById(R.id.btnLogout);
         MaterialButton btnThemeLight = findViewById(R.id.btnThemeLight);
         MaterialButton btnThemeDark = findViewById(R.id.btnThemeDark);
@@ -56,6 +58,7 @@ public class ProfileActivity extends AppCompatActivity {
         bindThemeSettings(btnThemeLight, btnThemeDark);
         bindQuizLimitSettings(btnDecreaseQuizLimit, btnIncreaseQuizLimit);
         btnWordPool.setOnClickListener(v -> startActivity(new Intent(this, WordPoolActivity.class)));
+        btnProfileReport.setOnClickListener(v -> startActivity(new Intent(this, WeeklyReportActivity.class)));
         btnLogout.setOnClickListener(v -> {
             sessionManager.clear();
             openLoginAndClose();

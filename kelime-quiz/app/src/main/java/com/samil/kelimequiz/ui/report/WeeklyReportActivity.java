@@ -301,7 +301,7 @@ public class WeeklyReportActivity extends AppCompatActivity {
             } else {
                 View spacer = new View(this);
                 LinearLayout.LayoutParams spacerParams = new LinearLayout.LayoutParams(0, 1, 1f);
-                spacerParams.leftMargin = dp(6);
+                spacerParams.leftMargin = dp(4);
                 spacer.setLayoutParams(spacerParams);
                 row.addView(spacer);
             }
@@ -313,32 +313,35 @@ public class WeeklyReportActivity extends AppCompatActivity {
 
     private View createMetricCell(ActivityReportRepository.ActivityMetric metric) {
         View itemView = LayoutInflater.from(this).inflate(R.layout.item_report_metric, null, false);
-        MaterialCardView card = (MaterialCardView) itemView;
+        View glow = itemView.findViewById(R.id.viewMetricGlow);
+        MaterialCardView card = itemView.findViewById(R.id.cardMetric);
         View accent = itemView.findViewById(R.id.viewMetricAccent);
         View iconContainer = itemView.findViewById(R.id.ivMetricIcon).getParent() instanceof View
                 ? (View) itemView.findViewById(R.id.ivMetricIcon).getParent()
                 : null;
         TextView label = itemView.findViewById(R.id.tvMetricLabel);
         TextView value = itemView.findViewById(R.id.tvMetricValue);
-        TextView subtitle = itemView.findViewById(R.id.tvMetricSubtitle);
         android.widget.ImageView icon = itemView.findViewById(R.id.ivMetricIcon);
 
+        int accentColor = ContextCompat.getColor(this, metric.accentColorResId);
+        glow.setBackgroundTintList(ColorStateList.valueOf(adjustAlpha(accentColor, 0.10f)));
         accent.setBackgroundColor(ContextCompat.getColor(this, metric.accentColorResId));
         icon.setImageResource(metric.iconResId);
-        icon.setImageTintList(ColorStateList.valueOf(ContextCompat.getColor(this, metric.accentColorResId)));
+        icon.setImageTintList(ColorStateList.valueOf(accentColor));
         label.setText(metric.label);
         value.setText(metric.value);
-        subtitle.setText(metric.subtitle);
 
         if (iconContainer != null) {
-            iconContainer.setBackgroundTintList(ColorStateList.valueOf(adjustAlpha(ContextCompat.getColor(this, metric.accentColorResId), 0.10f)));
+            iconContainer.setBackgroundTintList(ColorStateList.valueOf(adjustAlpha(accentColor, 0.10f)));
         }
 
-        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(0, dp(160), 1f);
-        params.leftMargin = dp(0);
-        params.rightMargin = dp(0);
-        card.setLayoutParams(params);
-        return card;
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1f);
+        params.leftMargin = dp(4);
+        params.rightMargin = dp(4);
+        params.topMargin = dp(1);
+        params.bottomMargin = dp(1);
+        itemView.setLayoutParams(params);
+        return itemView;
     }
 
     private void populateBucketContainer(LinearLayout container, List<ActivityReportRepository.ActivityBucket> buckets) {
@@ -469,10 +472,14 @@ public class WeeklyReportActivity extends AppCompatActivity {
 
     private void animateView(View view, long delayMs) {
         view.setAlpha(0f);
-        view.setTranslationY(dp(10));
+        view.setTranslationY(dp(12));
+        view.setScaleX(0.98f);
+        view.setScaleY(0.98f);
         view.animate()
                 .alpha(1f)
                 .translationY(0f)
+                .scaleX(1f)
+                .scaleY(1f)
                 .setStartDelay(delayMs)
                 .setDuration(220L)
                 .setInterpolator(new AccelerateDecelerateInterpolator())
