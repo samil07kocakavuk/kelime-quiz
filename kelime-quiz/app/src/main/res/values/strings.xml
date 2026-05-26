@@ -201,6 +201,8 @@
     <string name="report_weekly_section_title">Bu haftanın dağılımı</string>
     <string name="report_monthly_section_title">Bu ayın dağılımı</string>
     <string name="report_total_section_title">Toplam özet</string>
+    <string name="report_total_chart_title">Toplam Dağılım</string>
+    <string name="report_total_chart_summary">Toplamda en yüksek payı %1$s aldı.</string>
     <string name="report_loading">Veriler yükleniyor…</string>
     <string name="report_no_data">Seçili dönemde henüz kayıt bulunmuyor.</string>
     <string name="report_empty_bucket">Bu bölümde henüz kayıt yok.</string>
@@ -215,15 +217,15 @@
     <string name="report_metric_total_activity">Toplam Aktivite</string>
     <string name="report_metric_average_activity">Ortalama Aktivite</string>
 
-    <string name="report_metric_sub_quiz">Quiz oturumu içinde toplam soru sayısı</string>
-    <string name="report_metric_sub_correct">Doğru cevaplar</string>
-    <string name="report_metric_sub_wrong">Yanlış cevaplar</string>
-    <string name="report_metric_sub_new_level_one">İlk kez 1. seviyeye ulaşan kelimeler</string>
-    <string name="report_metric_sub_wordle">Tamamlanan günlük Wordle oyunları</string>
-    <string name="report_metric_sub_wordle_won">Kazanılan Wordle oyunları</string>
-    <string name="report_metric_sub_ai_story">Oluşturulan AI hikayeleri</string>
-    <string name="report_metric_sub_total">Seçili dönemin toplam etkinlik sayısı</string>
-    <string name="report_metric_sub_average_activity">Seçili dönemin günlük ortalama etkinlik sayısı</string>
+    <string name="report_metric_sub_quiz">Toplam soru sayısı</string>
+    <string name="report_metric_sub_correct">Doğru sayısı</string>
+    <string name="report_metric_sub_wrong">Yanlış sayısı</string>
+    <string name="report_metric_sub_new_level_one">1. seviye kelimeler</string>
+    <string name="report_metric_sub_wordle">Wordle oyunları</string>
+    <string name="report_metric_sub_wordle_won">Kazanılan Wordle</string>
+    <string name="report_metric_sub_ai_story">Hikaye üretimleri</string>
+    <string name="report_metric_sub_total">Toplam etkinlik</string>
+    <string name="report_metric_sub_average_activity">Günlük ortalama</string>
 
     <string name="report_daily_note_format">Bugün %1$d quiz sorusu çözdün, %2$d doğru ve %3$d yanlış yaptın.</string>
     <string name="report_weekly_note_format">Bu hafta %1$d aktivite kaydedildi. Günlere göre dağılım aşağıda.</string>

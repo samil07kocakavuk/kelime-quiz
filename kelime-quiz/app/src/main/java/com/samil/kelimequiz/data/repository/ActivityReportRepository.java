@@ -34,22 +34,22 @@ public class ActivityReportRepository {
     }
 
     public ActivityReportData buildDailyReport(Context context, int userId) {
-        return buildReport(context, userId, PERIOD_DAILY);
+        return buildReport(new AndroidTextResolver(context), userId, PERIOD_DAILY);
     }
 
     public ActivityReportData buildWeeklyReport(Context context, int userId) {
-        return buildReport(context, userId, PERIOD_WEEKLY);
+        return buildReport(new AndroidTextResolver(context), userId, PERIOD_WEEKLY);
     }
 
     public ActivityReportData buildMonthlyReport(Context context, int userId) {
-        return buildReport(context, userId, PERIOD_MONTHLY);
+        return buildReport(new AndroidTextResolver(context), userId, PERIOD_MONTHLY);
     }
 
     public ActivityReportData buildTotalReport(Context context, int userId) {
-        return buildReport(context, userId, PERIOD_TOTAL);
+        return buildReport(new AndroidTextResolver(context), userId, PERIOD_TOTAL);
     }
 
-    private ActivityReportData buildReport(Context context, int userId, int period) {
+    ActivityReportData buildReport(TextResolver strings, int userId, int period) {
         Range range = resolveRange(period);
         List<QuizResultEntity> allResults = quizResultDao.listByUser(userId);
         List<QuizResultEntity> results = filterResults(allResults, range.startAt, range.endAt);
@@ -70,18 +70,20 @@ public class ActivityReportRepository {
         int totalActivity = totalQuestions + wordleCompletedCount + aiStoryCount;
         double averageActivity = calculateAverageActivity(period, range, totalActivity);
 
-        List<ActivityMetric> metrics = buildMetrics(context, totalQuestions, correctAnswers, wrongAnswers,
+        List<ActivityMetric> metrics = buildMetrics(strings, totalQuestions, correctAnswers, wrongAnswers,
                 newLevelOneCount, wordleCompletedCount, wordleWonCount, aiStoryCount, totalActivity, averageActivity, period);
 
-        List<ActivityBucket> buckets = buildBuckets(context, period, results, logs, range.startAt, range.endAt, totalActivity);
-        List<ActivitySegment> segments = buildSegments(buckets);
+        List<ActivityBucket> buckets = buildBuckets(strings, period, results, logs, range.startAt, range.endAt, totalActivity);
+        List<ActivitySegment> segments = period == PERIOD_TOTAL
+                ? buildTotalSegments(strings, totalQuestions, wordleCompletedCount, aiStoryCount)
+                : buildSegments(buckets);
 
-        String periodTitle = getPeriodTitle(context, period);
-        String note = getPeriodNote(context, period, totalActivity, totalQuestions, correctAnswers, wrongAnswers, wordleCompletedCount, aiStoryCount);
-        String subtitle = buildSubtitle(context, period, totalActivity, totalQuestions, correctAnswers, wrongAnswers, wordleCompletedCount, aiStoryCount);
-        String insight = buildInsight(context, period, buckets, totalActivity);
-        String chartSummary = buildChartSummary(context, period, buckets);
-        String heroSummary = buildHeroSummary(context, period, buckets, totalActivity, totalQuestions, correctAnswers, wrongAnswers, wordleCompletedCount, aiStoryCount);
+        String periodTitle = getPeriodTitle(strings, period);
+        String note = getPeriodNote(strings, period, totalActivity, totalQuestions, correctAnswers, wrongAnswers, wordleCompletedCount, aiStoryCount);
+        String subtitle = buildSubtitle(strings, period, totalActivity, totalQuestions, correctAnswers, wrongAnswers, wordleCompletedCount, aiStoryCount);
+        String insight = buildInsight(strings, period, buckets, totalActivity);
+        String chartSummary = buildChartSummary(strings, period, buckets, segments);
+        String heroSummary = buildHeroSummary(strings, period, buckets, totalActivity, totalQuestions, correctAnswers, wrongAnswers, wordleCompletedCount, aiStoryCount);
 
         return new ActivityReportData(
                 period,
@@ -98,7 +100,7 @@ public class ActivityReportRepository {
         );
     }
 
-    private List<ActivityMetric> buildMetrics(Context context,
+    private List<ActivityMetric> buildMetrics(TextResolver strings,
                                               int totalQuestions,
                                               int correctAnswers,
                                               int wrongAnswers,
@@ -112,55 +114,55 @@ public class ActivityReportRepository {
         List<ActivityMetric> metrics = new ArrayList<>();
         metrics.add(new ActivityMetric(R.drawable.ic_quiz_graphic,
                 R.color.report_chart_1,
-                context.getString(R.string.report_metric_quiz_questions),
+                strings.getString(R.string.report_metric_quiz_questions),
                 Integer.toString(totalQuestions),
-                context.getString(R.string.report_metric_sub_quiz)));
+                strings.getString(R.string.report_metric_sub_quiz)));
         metrics.add(new ActivityMetric(R.drawable.ic_check_graphic,
                 R.color.report_chart_3,
-                context.getString(R.string.report_metric_quiz_correct),
+                strings.getString(R.string.report_metric_quiz_correct),
                 Integer.toString(correctAnswers),
-                context.getString(R.string.report_metric_sub_correct)));
+                strings.getString(R.string.report_metric_sub_correct)));
         metrics.add(new ActivityMetric(R.drawable.ic_close_graphic,
                 R.color.report_chart_2,
-                context.getString(R.string.report_metric_quiz_wrong),
+                strings.getString(R.string.report_metric_quiz_wrong),
                 Integer.toString(wrongAnswers),
-                context.getString(R.string.report_metric_sub_wrong)));
+                strings.getString(R.string.report_metric_sub_wrong)));
         metrics.add(new ActivityMetric(R.drawable.ic_target_graphic,
                 R.color.report_chart_4,
-                context.getString(R.string.report_metric_new_level_one),
+                strings.getString(R.string.report_metric_new_level_one),
                 Integer.toString(newLevelOneCount),
-                context.getString(R.string.report_metric_sub_new_level_one)));
+                strings.getString(R.string.report_metric_sub_new_level_one)));
         metrics.add(new ActivityMetric(R.drawable.ic_wordle_graphic,
                 R.color.report_chart_6,
-                context.getString(R.string.report_metric_wordle_completed),
+                strings.getString(R.string.report_metric_wordle_completed),
                 Integer.toString(wordleCompletedCount),
-                context.getString(R.string.report_metric_sub_wordle)));
+                strings.getString(R.string.report_metric_sub_wordle)));
         metrics.add(new ActivityMetric(R.drawable.ic_wordle_graphic,
                 R.color.report_chart_7,
-                context.getString(R.string.report_metric_wordle_won),
+                strings.getString(R.string.report_metric_wordle_won),
                 Integer.toString(wordleWonCount),
-                context.getString(R.string.report_metric_sub_wordle_won)));
+                strings.getString(R.string.report_metric_sub_wordle_won)));
         metrics.add(new ActivityMetric(R.drawable.ic_lightbulb,
                 R.color.report_chart_5,
-                context.getString(R.string.report_metric_ai_story),
+                strings.getString(R.string.report_metric_ai_story),
                 Integer.toString(aiStoryCount),
-                context.getString(R.string.report_metric_sub_ai_story)));
+                strings.getString(R.string.report_metric_sub_ai_story)));
         boolean showAverageMetric = period == PERIOD_WEEKLY || period == PERIOD_MONTHLY;
         metrics.add(new ActivityMetric(R.drawable.ic_activity_graphic,
                 R.color.report_chart_8,
-                context.getString(showAverageMetric
+                strings.getString(showAverageMetric
                         ? R.string.report_metric_average_activity
                         : R.string.report_metric_total_activity),
                 showAverageMetric
                         ? String.format(Locale.getDefault(), "%.1f", averageActivity)
                         : Integer.toString(totalActivity),
-                context.getString(showAverageMetric
+                strings.getString(showAverageMetric
                         ? R.string.report_metric_sub_average_activity
                         : R.string.report_metric_sub_total)));
         return metrics;
     }
 
-    private List<ActivityBucket> buildBuckets(Context context,
+    private List<ActivityBucket> buildBuckets(TextResolver strings,
                                               int period,
                                               List<QuizResultEntity> results,
                                               List<ActivityLogEntity> logs,
@@ -172,8 +174,8 @@ public class ActivityReportRepository {
         }
 
         LinkedHashMap<String, BucketAccumulator> ordered = period == PERIOD_WEEKLY
-                ? buildWeeklyBuckets(context)
-                : buildMonthlyBuckets(context, startAt);
+                ? buildWeeklyBuckets(strings)
+                : buildMonthlyBuckets(startAt);
 
         for (QuizResultEntity result : results) {
             String key = period == PERIOD_WEEKLY ? weekDayKey(result.completedAt) : monthWeekKey(result.completedAt, startAt);
@@ -207,15 +209,10 @@ public class ActivityReportRepository {
         for (BucketAccumulator accumulator : ordered.values()) {
             int displayTotal = accumulator.total;
             int percent = totalActivity > 0 ? Math.round((displayTotal * 100f) / totalActivity) : 0;
-            String details = "Quiz Soru " + accumulator.quizQuestions
-                    + " · Wordle " + accumulator.wordleCompleted
-                    + " · Kazanılan " + accumulator.wordleWon
-                    + " · Hikaye " + accumulator.aiStory
-                    + " · Yeni kelime " + accumulator.newLevelOne;
             buckets.add(new ActivityBucket(
                     accumulator.title,
-                    context.getString(R.string.report_metric_total_activity) + " " + displayTotal,
-                    details,
+                    strings.getString(R.string.report_metric_total_activity) + " " + displayTotal,
+                    "",
                     percent + "%",
                     getPaletteColor(paletteIndex++),
                     displayTotal
@@ -234,7 +231,30 @@ public class ActivityReportRepository {
         return segments;
     }
 
-    private String buildHeroSummary(Context context,
+    private List<ActivitySegment> buildTotalSegments(TextResolver strings,
+                                                     int totalQuestions,
+                                                     int wordleCompletedCount,
+                                                     int aiStoryCount) {
+        List<ActivitySegment> segments = new ArrayList<>();
+        if (totalQuestions > 0) {
+            segments.add(new ActivitySegment(strings.getString(R.string.report_metric_quiz_questions),
+                    totalQuestions,
+                    R.color.report_chart_1));
+        }
+        if (wordleCompletedCount > 0) {
+            segments.add(new ActivitySegment(strings.getString(R.string.report_metric_wordle_completed),
+                    wordleCompletedCount,
+                    R.color.report_chart_6));
+        }
+        if (aiStoryCount > 0) {
+            segments.add(new ActivitySegment(strings.getString(R.string.report_metric_ai_story),
+                    aiStoryCount,
+                    R.color.report_chart_5));
+        }
+        return segments;
+    }
+
+    private String buildHeroSummary(TextResolver strings,
                                     int period,
                                     List<ActivityBucket> buckets,
                                     int totalActivity,
@@ -250,7 +270,7 @@ public class ActivityReportRepository {
                     activeDays++;
                 }
             }
-            return context.getString(R.string.report_weekly_insight_format, activeDays, totalActivity);
+            return strings.getString(R.string.report_weekly_insight_format, activeDays, totalActivity);
         }
         if (period == PERIOD_MONTHLY) {
             int activeWeeks = 0;
@@ -259,28 +279,28 @@ public class ActivityReportRepository {
                     activeWeeks++;
                 }
             }
-            return context.getString(R.string.report_monthly_insight_format, activeWeeks, totalActivity);
+            return strings.getString(R.string.report_monthly_insight_format, activeWeeks, totalActivity);
         }
         if (period == PERIOD_TOTAL) {
-            return context.getString(R.string.report_total_note_format, totalActivity, wordleCompletedCount, aiStoryCount);
+            return strings.getString(R.string.report_total_note_format, totalActivity, wordleCompletedCount, aiStoryCount);
         }
-        return context.getString(R.string.report_daily_note_format, totalQuestions, correctAnswers, wrongAnswers);
+        return strings.getString(R.string.report_daily_note_format, totalQuestions, correctAnswers, wrongAnswers);
     }
 
-    private String getPeriodTitle(Context context, int period) {
+    private String getPeriodTitle(TextResolver strings, int period) {
         switch (period) {
             case PERIOD_WEEKLY:
-                return context.getString(R.string.report_weekly_section_title);
+                return strings.getString(R.string.report_weekly_section_title);
             case PERIOD_MONTHLY:
-                return context.getString(R.string.report_monthly_section_title);
+                return strings.getString(R.string.report_monthly_section_title);
             case PERIOD_TOTAL:
-                return context.getString(R.string.report_total_section_title);
+                return strings.getString(R.string.report_total_section_title);
             default:
-                return context.getString(R.string.report_daily_title);
+                return strings.getString(R.string.report_daily_title);
         }
     }
 
-    private String buildSubtitle(Context context,
+    private String buildSubtitle(TextResolver strings,
                                  int period,
                                  int totalActivity,
                                  int totalQuestions,
@@ -290,40 +310,53 @@ public class ActivityReportRepository {
                                  int aiStoryCount) {
         switch (period) {
             case PERIOD_WEEKLY:
-                return context.getString(R.string.report_weekly_note_format, totalActivity);
+                return strings.getString(R.string.report_weekly_note_format, totalActivity);
             case PERIOD_MONTHLY:
-                return context.getString(R.string.report_monthly_note_format, totalActivity);
+                return strings.getString(R.string.report_monthly_note_format, totalActivity);
             case PERIOD_TOTAL:
-                return context.getString(R.string.report_total_note_format, totalActivity, wordleCompletedCount, aiStoryCount);
+                return strings.getString(R.string.report_total_note_format, totalActivity, wordleCompletedCount, aiStoryCount);
             default:
-                return context.getString(R.string.report_daily_subtitle);
+                return strings.getString(R.string.report_daily_subtitle);
         }
     }
 
-    private String getPeriodNote(Context context, int period, int totalActivity, int totalQuestions, int correctAnswers, int wrongAnswers, int wordleCompletedCount, int aiStoryCount) {
+    private String getPeriodNote(TextResolver strings, int period, int totalActivity, int totalQuestions, int correctAnswers, int wrongAnswers, int wordleCompletedCount, int aiStoryCount) {
         switch (period) {
             case PERIOD_WEEKLY:
-                return context.getString(R.string.report_weekly_note_format, totalActivity);
+                return strings.getString(R.string.report_weekly_note_format, totalActivity);
             case PERIOD_MONTHLY:
-                return context.getString(R.string.report_monthly_note_format, totalActivity);
+                return strings.getString(R.string.report_monthly_note_format, totalActivity);
             case PERIOD_TOTAL:
-                return context.getString(R.string.report_total_note_format, totalActivity, wordleCompletedCount, aiStoryCount);
+                return strings.getString(R.string.report_total_note_format, totalActivity, wordleCompletedCount, aiStoryCount);
             default:
-                return context.getString(R.string.report_daily_note_format, totalQuestions, correctAnswers, wrongAnswers);
+                return strings.getString(R.string.report_daily_note_format, totalQuestions, correctAnswers, wrongAnswers);
         }
     }
 
-    private String buildInsight(Context context, int period, List<ActivityBucket> buckets, int totalActivity) {
+    private String buildInsight(TextResolver strings, int period, List<ActivityBucket> buckets, int totalActivity) {
         if (period == PERIOD_WEEKLY) {
-            return context.getString(R.string.report_weekly_insight_format, countActiveBuckets(buckets), totalActivity);
+            return strings.getString(R.string.report_weekly_insight_format, countActiveBuckets(buckets), totalActivity);
         }
         if (period == PERIOD_MONTHLY) {
-            return context.getString(R.string.report_monthly_insight_format, countActiveBuckets(buckets), totalActivity);
+            return strings.getString(R.string.report_monthly_insight_format, countActiveBuckets(buckets), totalActivity);
         }
-        return context.getString(R.string.report_chart_center_activity) + ": " + totalActivity;
+        return strings.getString(R.string.report_chart_center_activity) + ": " + totalActivity;
     }
 
-    private String buildChartSummary(Context context, int period, List<ActivityBucket> buckets) {
+    private String buildChartSummary(TextResolver strings, int period, List<ActivityBucket> buckets, List<ActivitySegment> segments) {
+        if (period == PERIOD_TOTAL) {
+            ActivitySegment topSegment = null;
+            for (ActivitySegment segment : segments) {
+                if (segment.value > 0 && (topSegment == null || segment.value > topSegment.value)) {
+                    topSegment = segment;
+                }
+            }
+            if (topSegment == null) {
+                return strings.getString(R.string.report_chart_empty);
+            }
+            return strings.getString(R.string.report_total_chart_summary, topSegment.label);
+        }
+
         ActivityBucket topBucket = null;
         for (ActivityBucket bucket : buckets) {
             if (bucket.value > 0 && (topBucket == null || bucket.value > topBucket.value)) {
@@ -331,12 +364,12 @@ public class ActivityReportRepository {
             }
         }
         if (topBucket == null) {
-            return context.getString(R.string.report_chart_empty);
+            return strings.getString(R.string.report_chart_empty);
         }
         if (period == PERIOD_MONTHLY) {
-            return context.getString(R.string.report_chart_summary_monthly, topBucket.title);
+            return strings.getString(R.string.report_chart_summary_monthly, topBucket.title);
         }
-        return context.getString(R.string.report_chart_summary_weekly, topBucket.title);
+        return strings.getString(R.string.report_chart_summary_weekly, topBucket.title);
     }
 
     private double calculateAverageActivity(int period, Range range, int totalActivity) {
@@ -371,9 +404,9 @@ public class ActivityReportRepository {
         return counts;
     }
 
-    private LinkedHashMap<String, BucketAccumulator> buildWeeklyBuckets(Context context) {
+    private LinkedHashMap<String, BucketAccumulator> buildWeeklyBuckets(TextResolver strings) {
         LinkedHashMap<String, BucketAccumulator> buckets = new LinkedHashMap<>();
-        buckets.put("MON", new BucketAccumulator("MON", context.getString(R.string.day_monday_short)));
+        buckets.put("MON", new BucketAccumulator("MON", strings.getString(R.string.day_monday_short)));
         buckets.put("TUE", new BucketAccumulator("TUE", "Sal"));
         buckets.put("WED", new BucketAccumulator("WED", "Çar"));
         buckets.put("THU", new BucketAccumulator("THU", "Per"));
@@ -383,12 +416,11 @@ public class ActivityReportRepository {
         return buckets;
     }
 
-    private LinkedHashMap<String, BucketAccumulator> buildMonthlyBuckets(Context context, long monthStartAt) {
+    private LinkedHashMap<String, BucketAccumulator> buildMonthlyBuckets(long monthStartAt) {
         LinkedHashMap<String, BucketAccumulator> buckets = new LinkedHashMap<>();
         Calendar start = Calendar.getInstance();
         start.setTimeInMillis(monthStartAt);
         Calendar cursor = (Calendar) start.clone();
-        Calendar now = Calendar.getInstance();
         int bucketIndex = 1;
         while (cursor.get(Calendar.MONTH) == start.get(Calendar.MONTH) && cursor.get(Calendar.YEAR) == start.get(Calendar.YEAR)) {
             buckets.put(String.valueOf(bucketIndex), new BucketAccumulator(String.valueOf(bucketIndex), bucketIndex + ". hafta"));
@@ -500,6 +532,26 @@ public class ActivityReportRepository {
                 return R.color.report_chart_7;
             default:
                 return R.color.report_chart_8;
+        }
+    }
+
+    interface TextResolver {
+        String getString(int resId, Object... args);
+    }
+
+    private static final class AndroidTextResolver implements TextResolver {
+        private final Context context;
+
+        private AndroidTextResolver(Context context) {
+            this.context = context;
+        }
+
+        @Override
+        public String getString(int resId, Object... args) {
+            if (args == null || args.length == 0) {
+                return context.getString(resId);
+            }
+            return context.getString(resId, args);
         }
     }
 

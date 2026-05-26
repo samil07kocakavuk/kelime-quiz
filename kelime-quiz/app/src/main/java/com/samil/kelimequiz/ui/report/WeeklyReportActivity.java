@@ -55,6 +55,7 @@ public class WeeklyReportActivity extends AppCompatActivity {
     private TextView tvMonthlyComparisonSummary;
     private TextView tvMonthlyAnalysis;
     private TextView tvTotalAnalysis;
+    private TextView tvTotalChartSummary;
 
     private LinearLayout dailyMetricsContainer;
     private LinearLayout weeklyMetricsContainer;
@@ -64,9 +65,12 @@ public class WeeklyReportActivity extends AppCompatActivity {
     private LinearLayout monthlyBucketsContainer;
     private LinearLayout weeklyLegendContainer;
     private LinearLayout monthlyLegendContainer;
+    private LinearLayout totalPercentContainer;
+    private LinearLayout totalLegendContainer;
 
     private ActivityDonutChartView weeklyChartView;
     private ActivityDonutChartView monthlyChartView;
+    private ActivityDonutChartView totalChartView;
 
     private ActivityReportRepository reportRepository;
     private ActivityReportRepository.ActivityReportData dailyReport;
@@ -123,6 +127,7 @@ public class WeeklyReportActivity extends AppCompatActivity {
         tvMonthlyComparisonSummary = findViewById(R.id.tvMonthlyComparisonSummary);
         tvMonthlyAnalysis = findViewById(R.id.tvMonthlyAnalysis);
         tvTotalAnalysis = findViewById(R.id.tvTotalAnalysis);
+        tvTotalChartSummary = findViewById(R.id.tvTotalChartSummary);
 
         dailyMetricsContainer = findViewById(R.id.dailyMetricsContainer);
         weeklyMetricsContainer = findViewById(R.id.weeklyMetricsContainer);
@@ -132,9 +137,12 @@ public class WeeklyReportActivity extends AppCompatActivity {
         monthlyBucketsContainer = findViewById(R.id.monthlyBucketsContainer);
         weeklyLegendContainer = findViewById(R.id.weeklyLegendContainer);
         monthlyLegendContainer = findViewById(R.id.monthlyLegendContainer);
+        totalPercentContainer = findViewById(R.id.totalPercentContainer);
+        totalLegendContainer = findViewById(R.id.totalLegendContainer);
 
         weeklyChartView = findViewById(R.id.weeklyChartView);
         monthlyChartView = findViewById(R.id.monthlyChartView);
+        totalChartView = findViewById(R.id.totalChartView);
     }
 
     private void setupToolbar() {
@@ -166,6 +174,7 @@ public class WeeklyReportActivity extends AppCompatActivity {
         tvMonthlyComparisonSummary.setText(R.string.report_loading);
         tvMonthlyAnalysis.setText(R.string.report_loading);
         tvTotalAnalysis.setText(R.string.report_loading);
+        tvTotalChartSummary.setText(R.string.report_loading);
     }
 
     private void loadReports() {
@@ -227,6 +236,10 @@ public class WeeklyReportActivity extends AppCompatActivity {
         if (report == null) return;
         tvTotalAnalysis.setText(report.note);
         populateMetricContainer(totalMetricsContainer, report.metrics);
+        tvTotalChartSummary.setText(report.chartSummary);
+        populatePercentTagContainer(totalPercentContainer, report);
+        populateLegendContainer(totalLegendContainer, report.segments);
+        bindChart(totalChartView, report);
     }
 
     private void setHero(String title, String subtitle, String summary) {
@@ -324,8 +337,9 @@ public class WeeklyReportActivity extends AppCompatActivity {
         android.widget.ImageView icon = itemView.findViewById(R.id.ivMetricIcon);
 
         int accentColor = ContextCompat.getColor(this, metric.accentColorResId);
-        glow.setBackgroundTintList(ColorStateList.valueOf(adjustAlpha(accentColor, 0.10f)));
-        accent.setBackgroundColor(ContextCompat.getColor(this, metric.accentColorResId));
+        glow.setBackgroundTintList(ColorStateList.valueOf(adjustAlpha(accentColor, 0.28f)));
+        glow.setAlpha(0.78f);
+        accent.setBackgroundColor(accentColor);
         icon.setImageResource(metric.iconResId);
         icon.setImageTintList(ColorStateList.valueOf(accentColor));
         label.setText(metric.label);
@@ -335,11 +349,11 @@ public class WeeklyReportActivity extends AppCompatActivity {
             iconContainer.setBackgroundTintList(ColorStateList.valueOf(adjustAlpha(accentColor, 0.10f)));
         }
 
-        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1f);
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(0, dp(160), 1f);
         params.leftMargin = dp(4);
         params.rightMargin = dp(4);
-        params.topMargin = dp(1);
-        params.bottomMargin = dp(1);
+        params.topMargin = dp(4);
+        params.bottomMargin = dp(4);
         itemView.setLayoutParams(params);
         return itemView;
     }
@@ -359,17 +373,30 @@ public class WeeklyReportActivity extends AppCompatActivity {
         for (int i = 0; i < buckets.size(); i++) {
             ActivityReportRepository.ActivityBucket bucket = buckets.get(i);
             View itemView = LayoutInflater.from(this).inflate(R.layout.item_report_bucket, container, false);
+            View glow = itemView.findViewById(R.id.viewBucketGlow);
+            MaterialCardView card = itemView.findViewById(R.id.cardBucket);
             View accent = itemView.findViewById(R.id.viewBucketAccent);
             TextView title = itemView.findViewById(R.id.tvBucketTitle);
             TextView meta = itemView.findViewById(R.id.tvBucketMeta);
             TextView details = itemView.findViewById(R.id.tvBucketDetails);
             TextView percent = itemView.findViewById(R.id.tvBucketPercent);
 
-            accent.setBackgroundColor(ContextCompat.getColor(this, bucket.colorResId));
+            int accentColor = ContextCompat.getColor(this, bucket.colorResId);
+            glow.setBackgroundTintList(ColorStateList.valueOf(adjustAlpha(accentColor, 0.28f)));
+            glow.setAlpha(0.78f);
+            accent.setBackgroundColor(accentColor);
             title.setText(bucket.title);
             meta.setText(bucket.meta);
             details.setText(bucket.details);
             percent.setText(bucket.percent);
+            View iconContainer = accent.getParent() instanceof View ? (View) accent.getParent() : null;
+            if (iconContainer != null) {
+                iconContainer.setBackgroundTintList(ColorStateList.valueOf(adjustAlpha(accentColor, 0.10f)));
+            }
+            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+            params.topMargin = dp(4);
+            params.bottomMargin = dp(4);
+            itemView.setLayoutParams(params);
             container.addView(itemView);
             animateView(itemView, i * 30L);
         }
@@ -398,6 +425,29 @@ public class WeeklyReportActivity extends AppCompatActivity {
             value.setText(String.format(Locale.getDefault(), "%d", segment.value));
             container.addView(itemView);
             animateView(itemView, i * 25L);
+        }
+    }
+
+    private void populatePercentTagContainer(LinearLayout container, ActivityReportRepository.ActivityReportData report) {
+        container.removeAllViews();
+        if (report == null || report.segments == null || report.segments.isEmpty() || report.totalActivity <= 0) {
+            return;
+        }
+
+        for (int i = 0; i < report.segments.size(); i++) {
+            ActivityReportRepository.ActivitySegment segment = report.segments.get(i);
+            if (segment.value <= 0) continue;
+
+            View itemView = LayoutInflater.from(this).inflate(R.layout.item_report_percent_tag, container, false);
+            View dot = itemView.findViewById(R.id.viewTagColor);
+            TextView label = itemView.findViewById(R.id.tvTagLabel);
+            TextView percent = itemView.findViewById(R.id.tvTagPercent);
+
+            dot.setBackgroundColor(ContextCompat.getColor(this, segment.colorResId));
+            label.setText(segment.label);
+            percent.setText(String.format(Locale.getDefault(), "%d%%", Math.round((segment.value * 100f) / report.totalActivity)));
+            container.addView(itemView);
+            animateView(itemView, i * 20L);
         }
     }
 

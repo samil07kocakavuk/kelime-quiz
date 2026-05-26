@@ -19,6 +19,6 @@ sonar {
         property "sonar.projectKey", "samil07kocakavuk_kelime-quiz"
         property "sonar.organization", "samilkocakavuk"
         property "sonar.coverage.jacoco.xmlReportPaths", "${project.rootDir}/app/build/reports/jacoco/jacocoTestReport/jacocoTestReport.xml"
-        property "sonar.coverage.exclusions", "**/*.java,**/*.kt"
+        property "sonar.coverage.exclusions", '**/R.class,**/R$*.class,**/BuildConfig.*,**/Manifest*.*,app/src/main/java/**,app/src/main/kotlin/**,app/src/test/**,app/src/androidTest/**'
     }
 }
