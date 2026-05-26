@@ -4,7 +4,6 @@ import android.content.Context;
 
 import com.samil.kelimequiz.R;
 import com.samil.kelimequiz.data.local.dao.ActivityLogDao;
-import com.samil.kelimequiz.data.local.dao.QuizProgressDao;
 import com.samil.kelimequiz.data.local.dao.QuizResultDao;
 import com.samil.kelimequiz.data.local.entity.ActivityLogEntity;
 import com.samil.kelimequiz.data.local.entity.QuizResultEntity;
@@ -17,6 +16,7 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 public class ActivityReportRepository {
     public static final int PERIOD_DAILY = 0;
@@ -25,14 +25,11 @@ public class ActivityReportRepository {
     public static final int PERIOD_TOTAL = 3;
 
     private final QuizResultDao quizResultDao;
-    private final QuizProgressDao quizProgressDao;
     private final ActivityLogDao activityLogDao;
 
     public ActivityReportRepository(QuizResultDao quizResultDao,
-                                    QuizProgressDao quizProgressDao,
                                     ActivityLogDao activityLogDao) {
         this.quizResultDao = quizResultDao;
-        this.quizProgressDao = quizProgressDao;
         this.activityLogDao = activityLogDao;
     }
 
@@ -58,11 +55,7 @@ public class ActivityReportRepository {
         List<QuizResultEntity> results = filterResults(allResults, range.startAt, range.endAt);
         List<ActivityLogEntity> logs = activityLogDao.listByUserAndRange(userId, range.startAt, range.endAt);
         Map<String, Integer> logCounts = groupLogCounts(logs);
-        int quizSessionCount = Math.max(logCounts.getOrDefault(ActivityLogEntity.TYPE_QUIZ_COMPLETED, 0), results.size());
-        int newLevelOneCount = Math.max(
-                logCounts.getOrDefault(ActivityLogEntity.TYPE_NEW_LEVEL_ONE, 0),
-                quizProgressDao.countFirstLevelOneWords(userId)
-        );
+        int newLevelOneCount = logCounts.getOrDefault(ActivityLogEntity.TYPE_NEW_LEVEL_ONE, 0);
         int wordleCompletedCount = logCounts.getOrDefault(ActivityLogEntity.TYPE_WORDLE_COMPLETED, 0);
         int wordleWonCount = logCounts.getOrDefault(ActivityLogEntity.TYPE_WORDLE_WON, 0);
         int aiStoryCount = logCounts.getOrDefault(ActivityLogEntity.TYPE_AI_STORY, 0);
@@ -74,12 +67,13 @@ public class ActivityReportRepository {
             correctAnswers += result.correctAnswers;
         }
         int wrongAnswers = Math.max(0, totalQuestions - correctAnswers);
-        int totalActivity = quizSessionCount + newLevelOneCount + wordleCompletedCount + aiStoryCount;
+        int totalActivity = totalQuestions + wordleCompletedCount + aiStoryCount;
+        double averageActivity = calculateAverageActivity(period, range, totalActivity);
 
         List<ActivityMetric> metrics = buildMetrics(context, totalQuestions, correctAnswers, wrongAnswers,
-                newLevelOneCount, wordleCompletedCount, wordleWonCount, aiStoryCount, totalActivity);
+                newLevelOneCount, wordleCompletedCount, wordleWonCount, aiStoryCount, totalActivity, averageActivity, period);
 
-        List<ActivityBucket> buckets = buildBuckets(context, period, logs, range.startAt, range.endAt, totalActivity);
+        List<ActivityBucket> buckets = buildBuckets(context, period, results, logs, range.startAt, range.endAt, totalActivity);
         List<ActivitySegment> segments = buildSegments(buckets);
 
         String periodTitle = getPeriodTitle(context, period);
@@ -112,7 +106,9 @@ public class ActivityReportRepository {
                                               int wordleCompletedCount,
                                               int wordleWonCount,
                                               int aiStoryCount,
-                                              int totalActivity) {
+                                              int totalActivity,
+                                              double averageActivity,
+                                              int period) {
         List<ActivityMetric> metrics = new ArrayList<>();
         metrics.add(new ActivityMetric(R.drawable.ic_quiz_graphic,
                 R.color.report_chart_1,
@@ -149,15 +145,28 @@ public class ActivityReportRepository {
                 context.getString(R.string.report_metric_ai_story),
                 Integer.toString(aiStoryCount),
                 context.getString(R.string.report_metric_sub_ai_story)));
+        boolean showAverageMetric = period == PERIOD_WEEKLY || period == PERIOD_MONTHLY;
         metrics.add(new ActivityMetric(R.drawable.ic_activity_graphic,
                 R.color.report_chart_8,
-                context.getString(R.string.report_metric_total_activity),
-                Integer.toString(totalActivity),
-                context.getString(R.string.report_metric_sub_total)));
+                context.getString(showAverageMetric
+                        ? R.string.report_metric_average_activity
+                        : R.string.report_metric_total_activity),
+                showAverageMetric
+                        ? String.format(Locale.getDefault(), "%.1f", averageActivity)
+                        : Integer.toString(totalActivity),
+                context.getString(showAverageMetric
+                        ? R.string.report_metric_sub_average_activity
+                        : R.string.report_metric_sub_total)));
         return metrics;
     }
 
-    private List<ActivityBucket> buildBuckets(Context context, int period, List<ActivityLogEntity> logs, long startAt, long endAt, int totalActivity) {
+    private List<ActivityBucket> buildBuckets(Context context,
+                                              int period,
+                                              List<QuizResultEntity> results,
+                                              List<ActivityLogEntity> logs,
+                                              long startAt,
+                                              long endAt,
+                                              int totalActivity) {
         if (period != PERIOD_WEEKLY && period != PERIOD_MONTHLY) {
             return Collections.emptyList();
         }
@@ -166,17 +175,29 @@ public class ActivityReportRepository {
                 ? buildWeeklyBuckets(context)
                 : buildMonthlyBuckets(context, startAt);
 
+        for (QuizResultEntity result : results) {
+            String key = period == PERIOD_WEEKLY ? weekDayKey(result.completedAt) : monthWeekKey(result.completedAt, startAt);
+            BucketAccumulator bucket = ordered.get(key);
+            if (bucket != null) {
+                bucket.quizQuestions += result.totalQuestions;
+                bucket.total += result.totalQuestions;
+            }
+        }
+
         for (ActivityLogEntity log : logs) {
             String key = period == PERIOD_WEEKLY ? weekDayKey(log.createdAt) : monthWeekKey(log.createdAt, startAt);
             BucketAccumulator bucket = ordered.get(key);
             if (bucket != null) {
-                bucket.quizSessions += ActivityLogEntity.TYPE_QUIZ_COMPLETED.equals(log.type) ? 1 : 0;
-                bucket.newLevelOne += ActivityLogEntity.TYPE_NEW_LEVEL_ONE.equals(log.type) ? 1 : 0;
-                bucket.wordleCompleted += ActivityLogEntity.TYPE_WORDLE_COMPLETED.equals(log.type) ? 1 : 0;
-                bucket.wordleWon += ActivityLogEntity.TYPE_WORDLE_WON.equals(log.type) ? 1 : 0;
-                bucket.aiStory += ActivityLogEntity.TYPE_AI_STORY.equals(log.type) ? 1 : 0;
-                if (!ActivityLogEntity.TYPE_WORDLE_WON.equals(log.type)) {
+                if (ActivityLogEntity.TYPE_WORDLE_COMPLETED.equals(log.type)) {
+                    bucket.wordleCompleted++;
                     bucket.total++;
+                } else if (ActivityLogEntity.TYPE_WORDLE_WON.equals(log.type)) {
+                    bucket.wordleWon++;
+                } else if (ActivityLogEntity.TYPE_AI_STORY.equals(log.type)) {
+                    bucket.aiStory++;
+                    bucket.total++;
+                } else if (ActivityLogEntity.TYPE_NEW_LEVEL_ONE.equals(log.type)) {
+                    bucket.newLevelOne++;
                 }
             }
         }
@@ -186,7 +207,7 @@ public class ActivityReportRepository {
         for (BucketAccumulator accumulator : ordered.values()) {
             int displayTotal = accumulator.total;
             int percent = totalActivity > 0 ? Math.round((displayTotal * 100f) / totalActivity) : 0;
-            String details = "Quiz " + accumulator.quizSessions
+            String details = "Quiz Soru " + accumulator.quizQuestions
                     + " · Wordle " + accumulator.wordleCompleted
                     + " · Kazanılan " + accumulator.wordleWon
                     + " · Hikaye " + accumulator.aiStory
@@ -316,6 +337,19 @@ public class ActivityReportRepository {
             return context.getString(R.string.report_chart_summary_monthly, topBucket.title);
         }
         return context.getString(R.string.report_chart_summary_weekly, topBucket.title);
+    }
+
+    private double calculateAverageActivity(int period, Range range, int totalActivity) {
+        int dayCount;
+        if (period == PERIOD_WEEKLY) {
+            dayCount = 7;
+        } else if (period == PERIOD_MONTHLY) {
+            long dayDiff = TimeUnit.MILLISECONDS.toDays(range.endAt - range.startAt);
+            dayCount = (int) Math.max(1L, dayDiff);
+        } else {
+            dayCount = 1;
+        }
+        return totalActivity / (double) dayCount;
     }
 
     private List<QuizResultEntity> filterResults(List<QuizResultEntity> allResults, long startAt, long endAt) {
@@ -483,7 +517,7 @@ public class ActivityReportRepository {
         final String key;
         final String title;
         int total;
-        int quizSessions;
+        int quizQuestions;
         int newLevelOne;
         int wordleCompleted;
         int wordleWon;

@@ -24,7 +24,7 @@ public class WordReportPrinter {
             @Override
             public void onPageFinished(WebView view, String url) {
                 PrintManager printManager = (PrintManager) context.getSystemService(Context.PRINT_SERVICE);
-                String jobName = "Kelime Quiz Raporu";
+                String jobName = "Kelime Havuzu Raporu";
                 if (printManager != null) {
                     printManager.print(
                             jobName,

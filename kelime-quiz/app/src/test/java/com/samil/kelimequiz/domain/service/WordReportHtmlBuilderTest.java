@@ -21,16 +21,18 @@ public class WordReportHtmlBuilderTest {
                 word(4, "quick", "hızlı", "Sıfatlar", "B1", 4)
         ));
 
+        assertTrue(html.contains("Kelime Havuzu Analiz Raporu"));
         assertTrue(html.contains("Toplam: 4"));
         assertTrue(html.contains("Öğrenilmiş: 1"));
         assertTrue(html.contains("Devam Eden: 2"));
         assertTrue(html.contains("Başlanmamış: 1"));
         assertTrue(html.contains("A1: 2"));
         assertTrue(html.contains("B1: 2"));
-        assertTrue(html.contains("Öğrenilmiş Kelimeler"));
-        assertTrue(html.contains("Öğrenilmekte Olan"));
-        assertTrue(html.contains("Başlanmamış"));
-        assertTrue(html.contains("quick"));
+        assertTrue(html.contains("Dil Seviyesi"));
+        assertTrue(html.contains("Öğrenilme Seviyesi"));
+        assertTrue(html.indexOf("apple") < html.indexOf("quick"));
+        assertTrue(html.indexOf("quick") < html.indexOf("doctor"));
+        assertTrue(html.indexOf("doctor") < html.indexOf("river"));
     }
 
     private WordWithLevel word(int id, String eng, String tr, String category, String cefrLevel, int level) {

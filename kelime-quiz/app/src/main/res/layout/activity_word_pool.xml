@@ -41,7 +41,7 @@
                     android:id="@+id/tvWordPoolTitle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/personal_analysis_action"
+                    android:text="@string/word_pool_title"
                     android:textColor="@color/text_primary"
                     android:textSize="26sp"
                     android:textStyle="bold" />
@@ -53,6 +53,14 @@
                     android:layout_marginTop="6dp"
                     android:text="@string/word_pool_loading"
                     android:textColor="@color/text_secondary" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnWordPoolReport"
+                    style="@style/AppButtonSecondary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:text="@string/word_pool_report_action" />
 
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>

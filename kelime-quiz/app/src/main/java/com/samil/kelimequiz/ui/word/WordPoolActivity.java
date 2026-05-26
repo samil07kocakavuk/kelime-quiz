@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
@@ -20,9 +21,11 @@ import com.samil.kelimequiz.data.local.entity.WordEntity;
 import com.samil.kelimequiz.data.local.entity.WordWithLevel;
 import com.samil.kelimequiz.domain.model.WordDetails;
 import com.samil.kelimequiz.domain.model.WordCategories;
+import com.samil.kelimequiz.domain.service.WordReportHtmlBuilder;
 import com.samil.kelimequiz.ui.auth.LoginActivity;
 import com.samil.kelimequiz.ui.main.WordCardAdapter;
 import com.samil.kelimequiz.ui.profile.ProfileActivity;
+import com.samil.kelimequiz.ui.word.WordReportPrinter;
 import com.samil.kelimequiz.util.AppContainer;
 import com.samil.kelimequiz.util.AppExecutors;
 import com.samil.kelimequiz.util.NavigationHelper;
@@ -43,6 +46,7 @@ public class WordPoolActivity extends AppCompatActivity implements WordCardAdapt
     private TextView tvEmptyState;
     private Spinner spCategoryFilter;
     private Spinner spSortOrder;
+    private View btnWordPoolReport;
     private SessionManager sessionManager;
     private List<WordWithLevel> allWords = new ArrayList<>();
 
@@ -60,6 +64,7 @@ public class WordPoolActivity extends AppCompatActivity implements WordCardAdapt
         tvEmptyState = findViewById(R.id.tvEmptyState);
         spCategoryFilter = findViewById(R.id.spCategoryFilter);
         spSortOrder = findViewById(R.id.spSortOrder);
+        btnWordPoolReport = findViewById(R.id.btnWordPoolReport);
         RecyclerView rvWords = findViewById(R.id.rvWords);
         wordAdapter = new WordCardAdapter(this);
         rvWords.setAdapter(wordAdapter);
@@ -68,6 +73,7 @@ public class WordPoolActivity extends AppCompatActivity implements WordCardAdapt
         NavigationHelper.bindBottomBar(this);
         setupCategorySpinner();
         setupSortSpinner();
+        btnWordPoolReport.setOnClickListener(v -> generateWordPoolReport());
 
     }
 
@@ -188,6 +194,31 @@ public class WordPoolActivity extends AppCompatActivity implements WordCardAdapt
         AppExecutors.io().execute(() -> {
             AppContainer.from(this).wordRepository.deleteWord(userId, wordId);
             runOnUiThread(this::loadWords);
+        });
+    }
+
+    private void generateWordPoolReport() {
+        if (sessionManager == null || !sessionManager.isLoggedIn()) {
+            return;
+        }
+
+        tvEmptyState.setText(R.string.word_pool_report_loading);
+        int userId = sessionManager.getUserId();
+        AppExecutors.io().execute(() -> {
+            List<WordWithLevel> words = AppContainer.from(this).wordRepository.listWords(userId);
+            if (words == null || words.isEmpty()) {
+                runOnUiThread(() -> {
+                    tvEmptyState.setText(R.string.word_pool_empty);
+                    Toast.makeText(this, R.string.word_pool_report_no_words, Toast.LENGTH_SHORT).show();
+                });
+                return;
+            }
+
+            String html = new WordReportHtmlBuilder().build(words);
+            runOnUiThread(() -> {
+                tvEmptyState.setText(R.string.word_pool_help);
+                new WordReportPrinter(this).print(html);
+            });
         });
     }
 

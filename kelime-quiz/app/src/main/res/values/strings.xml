@@ -38,7 +38,11 @@
     <string name="word_saved">Kelime başarıyla kaydedildi.</string>
     <string name="error_with_message">Hata: %1$s</string>
 
-    <string name="personal_analysis_action">Kişisel Analiz</string>
+    <string name="word_pool_action">Kelime Havuzu</string>
+    <string name="word_pool_title">Kelime Havuzu</string>
+    <string name="word_pool_report_action">Kelime Raporu Al</string>
+    <string name="word_pool_report_loading">Kelime raporu hazırlanıyor…</string>
+    <string name="word_pool_report_no_words">Rapor oluşturmak için önce kelime ekleyin.</string>
     <string name="word_pool_loading">Kelime havuzu hazırlanıyor…</string>
     <string name="word_pool_empty">Henüz kelime eklenmedi.</string>
     <string name="word_pool_help">Kelime kartlarına dokunarak detayları görebilirsin.</string>
@@ -209,6 +213,7 @@
     <string name="report_metric_wordle_won">Kazanılan Wordle</string>
     <string name="report_metric_ai_story">AI Hikaye</string>
     <string name="report_metric_total_activity">Toplam Aktivite</string>
+    <string name="report_metric_average_activity">Ortalama Aktivite</string>
 
     <string name="report_metric_sub_quiz">Quiz oturumu içinde toplam soru sayısı</string>
     <string name="report_metric_sub_correct">Doğru cevaplar</string>
@@ -218,6 +223,7 @@
     <string name="report_metric_sub_wordle_won">Kazanılan Wordle oyunları</string>
     <string name="report_metric_sub_ai_story">Oluşturulan AI hikayeleri</string>
     <string name="report_metric_sub_total">Seçili dönemin toplam etkinlik sayısı</string>
+    <string name="report_metric_sub_average_activity">Seçili dönemin günlük ortalama etkinlik sayısı</string>
 
     <string name="report_daily_note_format">Bugün %1$d quiz sorusu çözdün, %2$d doğru ve %3$d yanlış yaptın.</string>
     <string name="report_weekly_note_format">Bu hafta %1$d aktivite kaydedildi. Günlere göre dağılım aşağıda.</string>
